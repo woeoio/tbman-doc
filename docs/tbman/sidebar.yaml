@@ -9,22 +9,10 @@ items:
   - label: 更新日志
     file: start/ChangeLog.md
   - label: 开发
-  - label: 第1部分 事件
-    file: dev/01_Events.md
-  - label: 第2部分 方法
-    file: dev/02_Methods.md
-  - label: 第3部分 属性
-    file: dev/03_Properties.md
-  - label: 第4部分 控制
-    file: dev/04_Controls.md
-  - label: 第5部分 功能
-    file: dev/05_FeatureControls.md
-  - label: 第6部分 开发者工具与调试功能
-    file: dev/06_DeveloperTools.md
-  - label: 第7部分 高级设置
-    file: dev/07_AdvancedSettings.md
-  - label: 第8部分 总结与其他功能
-    file: dev/08_OtherFeatures.md
+  - label: 快速入门
+    file: dev/hello.md
+  - label: 更多...
+    file: dev/more.md
   - label: 关于
   - label: 致谢
     file: about/OfThanks.md
