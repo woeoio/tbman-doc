@@ -31,6 +31,24 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/start/ChangeLog.html</loc>
+            <lastmod>2024-12-07</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/start/Install.html</loc>
+            <lastmod>2024-12-07</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/start/KnownIssues.html</loc>
+            <lastmod>2024-12-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/02_Methods.html</loc>
             <lastmod>2024-12-05</lastmod>
             <changefreq>weekly</changefreq>
@@ -56,24 +74,6 @@
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/06_DeveloperTools.html</loc>
-            <lastmod>2024-12-05</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/start/ChangeLog.html</loc>
-            <lastmod>2024-12-07</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/start/Install.html</loc>
-            <lastmod>2024-12-07</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/start/KnownIssues.html</loc>
             <lastmod>2024-12-05</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
