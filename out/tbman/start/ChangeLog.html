@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="VB6/VBA, WebView2浏览器控件, 可做采集">
+    
+    
+    <meta name="description" content="VB6/VBA可用的WebView2浏览器控件(可做采集)">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>更新日志 - 开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class="active"><a  href="/tbman/">tbman</a></li>
+<li class=""><a  href="/vb6/">VB6(勇芳整理)</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="not_active with_link"><a href="/tbman/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/tbman/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/tbman/dev/01_Events.html"><span class="label">第1部分 事件</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/02_Methods.html"><span class="label">第2部分 方法</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/03_Properties.html"><span class="label">第3部分 属性</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/04_Controls.html"><span class="label">第4部分 控制</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/05_FeatureControls.html"><span class="label">第5部分 功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/06_DeveloperTools.html"><span class="label">第6部分 开发者工具与调试功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/07_AdvancedSettings.html"><span class="label">第7部分 高级设置</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/08_OtherFeatures.html"><span class="label">第8部分 总结与其他功能</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/tbman/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>更新日志</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h3 id="2024-12-06-v1.0.2">2024-12-06 v1.0.2</h3>
+<ul>
+<li>修复 多个事件没有触发的问题</li>
+<li>新增 Re</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/tbman/start/KnownIssues.html">
+                            <span class="icon"></span>
+                            <span class="label">已知问题</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/tbman/dev/01_Events.html">
+                            <span class="label">第1部分 事件</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+items:
+  - label: 简介
+  - label: 欢迎使用
+    file: README.md

@@ -1,0 +1,64 @@
+{
+    "site_name": "开发手册 | twinbasic.com.cn",
+    "site_slogon": "让Twinbasic开发更简单高效",
+    "site_root_url": "/",
+    "site_domain": "doc.twinbasic.com.cn",
+    "site_protocol": "http",
+    "config_template_dir": "config",
+    "route": {
+        "docs": {
+            "/twinbasic/": "docs/twinbasic",
+            "/tbman/": "docs/tbman",
+            "/vb6/": "docs/vb6"
+        },
+        "pages": {
+            "/": "pages/index"
+        },
+        "assets": {
+            "/static/": "static"
+        }
+    },
+    "plugins": {
+        "teedoc-plugin-markdown-parser": {
+            "from": "pypi",
+            "config": {}
+        },
+        "teedoc-plugin-theme-default": {
+            "from": "pypi",
+            "config": {
+                "dark": true,
+                "show_print_page": false,
+                "env": {
+                    "main_color": "#4caf7d"
+                }
+            }
+        },
+        "teedoc-plugin-search": {
+            "from": "pypi",
+            "config": {
+                "search_hint": "Search"
+            }
+        },
+        "teedoc-plugin-assets": {
+            "from": "pypi",
+            "config": {
+                "header_items": [
+                    "/static/css/custom.css"
+                ],
+                "footer_items": [
+                    "/static/js/custom.js",
+                    "http://api.a-vi.com/tongji/vist.js"
+                ],
+                "env": {
+                    "main_color": "#4caf7d",
+                    "second_color": "#0a7d43"
+                }
+            }
+        }
+    },
+    "rebuild_changes_delay": 1,
+    "robots": {
+        "User-agent": "*"
+    },
+    "layout_root_dir": "layout"
+}

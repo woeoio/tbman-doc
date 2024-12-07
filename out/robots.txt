@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://doc.twinbasic.com.cn/sitemap.xml

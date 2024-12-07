@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="VB6/VBA, WebView2浏览器控件, 可做采集">
+    
+    
+    <meta name="description" content="VB6/VBA可用的WebView2浏览器控件(可做采集)">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>方法 - 开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class="active"><a  href="/tbman/">tbman</a></li>
+<li class=""><a  href="/vb6/">VB6(勇芳整理)</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="not_active with_link"><a href="/tbman/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/tbman/dev/01_Events.html"><span class="label">第1部分 事件</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/tbman/dev/02_Methods.html"><span class="label">第2部分 方法</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/03_Properties.html"><span class="label">第3部分 属性</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/04_Controls.html"><span class="label">第4部分 控制</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/05_FeatureControls.html"><span class="label">第5部分 功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/06_DeveloperTools.html"><span class="label">第6部分 开发者工具与调试功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/07_AdvancedSettings.html"><span class="label">第7部分 高级设置</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/08_OtherFeatures.html"><span class="label">第8部分 总结与其他功能</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/tbman/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>方法</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>好的！接下来是 <strong>方法部分 (Methods)</strong> 的文档内容。我将继续提供每个方法的功能说明、参数说明和示例代码。</p>
+<hr />
+<h3 id="%3Cstrong%3E%E6%96%B9%E6%B3%95%E9%83%A8%E5%88%86-%28Methods%29%3C/strong%3E"><strong>方法部分 (Methods)</strong></h3>
+<h4 id="%3Cstrong%3E1.-Navigate%3C/strong%3E"><strong>1. Navigate</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：导航到指定的 URL。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>Url</code> (String)：要导航到的目标 URL。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.Navigate(&quot;https://www.example.com&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E2.-MoveFocus%3C/strong%3E"><strong>2. MoveFocus</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：将焦点设置到 WebView 控件。</li>
+<li><strong>参数</strong>：无。</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.MoveFocus()
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E3.-LoadHtml%3C/strong%3E"><strong>3. LoadHtml</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：加载指定的 HTML 内容字符串。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>htmlContent</code> (String)：要加载的 HTML 内容。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.LoadHtml(&quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello, World!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E4.-AddObject%3C/strong%3E"><strong>4. AddObject</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：将 COM 对象暴露给 JavaScript 端，允许通过 <code>window.chrome.webview.hostObjects.ObjName</code> 访问。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>ObjName</code> (String)：在 JavaScript 中访问对象的名称。</li>
+<li><code>Object</code> (Object)：要暴露给 JavaScript 的 COM 对象。</li>
+<li><code>UseDeferredInvoke</code> (Boolean)：是否使用延迟调用。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.AddObject(&quot;myObject&quot;, myCustomObject, False)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E5.-RemoveObject%3C/strong%3E"><strong>5. RemoveObject</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：移除之前通过 <code>AddObject</code> 方法暴露的 COM 对象。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>ObjName</code> (String)：要移除的对象名称。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.RemoveObject(&quot;myObject&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E6.-AddScriptToExecuteOnDocumentCreated%3C/strong%3E"><strong>6. AddScriptToExecuteOnDocumentCreated</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：在页面加载时注入 JavaScript 代码。仅对下一个页面导航生效。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>jsCode</code> (String)：要执行的 JavaScript 代码。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.AddScriptToExecuteOnDocumentCreated(&quot;console.log('Hello from injected script');&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E7.-AddWebResourceRequestedFilter%3C/strong%3E"><strong>7. AddWebResourceRequestedFilter</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：设置 URL 过滤器，当匹配的 URL 请求发生时，会触发 <code>WebResourceRequested</code> 事件。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>sFilter</code> (String)：URL 过滤器，可以使用通配符 <code>*</code> 和 <code>?</code>。</li>
+<li><code>FilterContext</code> (wv2WebResourceContext)：请求上下文，指定过滤器适用的资源类型。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.AddWebResourceRequestedFilter(&quot;https://www.example.com/*&quot;, WebView2RequestContext.wv2WebResourceContextScript)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E8.-RemoveWebResourceRequestedFilter%3C/strong%3E"><strong>8. RemoveWebResourceRequestedFilter</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：移除之前通过 <code>AddWebResourceRequestedFilter</code> 设置的 URL 过滤器。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>sFilter</code> (String)：要移除的过滤器。</li>
+<li><code>FilterContext</code> (wv2WebResourceContext)：请求上下文。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.RemoveWebResourceRequestedFilter(&quot;https://www.example.com/*&quot;, WebView2RequestContext.wv2WebResourceContextScript)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E9.-OpenDevToolsWindow%3C/strong%3E"><strong>9. OpenDevToolsWindow</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：打开开发者工具窗口，允许开发者进行调试。</li>
+<li><strong>参数</strong>：无。</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.OpenDevToolsWindow()
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E10.-CallDevToolsProtocolMethod%3C/strong%3E"><strong>10. CallDevToolsProtocolMethod</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：向开发者工具发送协议消息，用于调试操作。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>MethodName</code> (String)：要调用的开发者工具协议方法名称。</li>
+<li><code>ParamsAsJson</code> (String)：以 JSON 格式提供的方法参数。</li>
+<li><code>CustomEventId</code> (Variant)：可选，用户自定义的事件 ID，用于事件响应。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.CallDevToolsProtocolMethod(&quot;Emulation.setScriptExecutionDisabled&quot;, &quot;{&quot;&quot;value&quot;&quot;:true}&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E11.-ExecuteScript%3C/strong%3E"><strong>11. ExecuteScript</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：执行 JavaScript 代码，但不等待结果返回，也不返回任何值。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>jsCode</code> (String)：要执行的 JavaScript 代码。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">WebView21.ExecuteScript(&quot;alert('Hello from WebView!')&quot;)
+</code></pre>
+</li>
+</ul>
+<hr />
+<h4 id="%3Cstrong%3E12.-JsRun%3C/strong%3E"><strong>12. JsRun</strong></h4>
+<ul>
+<li><strong>功能说明</strong>：执行 JavaScript 函数，并等待结果返回。</li>
+<li><strong>参数</strong>：<ul>
+<li><code>FuncName</code> (String)：要执行的 JavaScript 函数名称。</li>
+<li><code>args()</code> (Variant)：可变参数，传递给 JavaScript 函数的参数。</li>
+</ul>
+</li>
+<li><strong>示例代码</strong>：
+<pre class="language-php"><code class="language-php">Dim result As Variant
+result = WebView21.JsRun(&quot;add&quot;, 1, 2)
+MsgBox result ' 输出 3
+</code></pre>
+</li>
+</ul>
+<hr />
+<h3 id="%E4%B8%8B%E4%B8%80%E6%AD%A5">下一步</h3>
+<p>如果这一部分没有问题，我将继续处理文档中的 <strong>属性部分 (Properties)</strong>。</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/tbman/dev/01_Events.html">
+                            <span class="icon"></span>
+                            <span class="label">第1部分 事件</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/tbman/dev/03_Properties.html">
+                            <span class="label">第3部分 属性</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

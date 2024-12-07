@@ -1,0 +1,55 @@
+{
+    "locale": "zh-cn",
+    "navbar": {
+        "title": "开发手册",
+        "logo": {
+            "alt": "my_site logo",
+            "url": ""
+        },
+        "home_url": "/",
+        "items": [
+            {
+                "url": "/twinbasic/",
+                "label": "twinbasic",
+                "position": "left"
+            },
+            {
+                "url": "/tbman/",
+                "label": "tbman",
+                "position": "left"
+            },
+            {
+                "url": "/vb6/",
+                "label": "VB6(勇芳整理)",
+                "position": "left"
+            },
+            {
+                "url": "https://twinbasic.com.cn",
+                "label": "首页",
+                "target": "_blank",
+                "position": "right"
+            }
+        ]
+    },
+    "footer": {
+        "top": [
+            {
+                "label": "",
+                "items": [
+                    {
+                        "label": "",
+                        "url": "#",
+                        "target": "_blank"
+                    }
+                ]
+            }
+        ],
+        "bottom": [
+            {
+                "label": "欢迎访问 vb6.pro 资源站点",
+                "url": "https://vb6.pro",
+                "target": "_blank"
+            }
+        ]
+    }
+}

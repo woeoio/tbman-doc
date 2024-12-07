@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="VB6/VBA, WebView2浏览器控件, 可做采集">
+    
+    
+    <meta name="description" content="VB6/VBA可用的WebView2浏览器控件(可做采集)">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>欢迎使用 - 开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class="active"><a  href="/tbman/">tbman</a></li>
+<li class=""><a  href="/vb6/">VB6(勇芳整理)</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="active with_link"><a href="/tbman/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/tbman/dev/01_Events.html"><span class="label">第1部分 事件</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/02_Methods.html"><span class="label">第2部分 方法</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/03_Properties.html"><span class="label">第3部分 属性</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/04_Controls.html"><span class="label">第4部分 控制</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/05_FeatureControls.html"><span class="label">第5部分 功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/06_DeveloperTools.html"><span class="label">第6部分 开发者工具与调试功能</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/07_AdvancedSettings.html"><span class="label">第7部分 高级设置</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/dev/08_OtherFeatures.html"><span class="label">第8部分 总结与其他功能</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/tbman/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/tbman/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>欢迎使用</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>非常棒！这里是为你的产品 <strong>vbman2</strong> 首发所准备的开场白，已经加入了合适的 emoji 装饰：</p>
+<hr />
+<p>🎉 <strong>重磅发布：vbman2 - 让你的 VB6/VBA 项目拥有现代化浏览体验！</strong> 🌐🚀</p>
+<p>亲爱的开发者们，大家好！👋</p>
+<p>今天，我们非常激动地宣布，经过长时间的打磨和优化，<strong>vbman2</strong> 正式首发！🎉 <strong>vbman2</strong> 是一款专为 VB6 和 VBA 开发者设计的 <strong>WebView2 浏览器控件</strong>，旨在将现代化的网页浏览体验带入经典的 VB6 环境中！💻✨</p>
+<h3 id="%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9-%3Cstrong%3Evbman2%3C/strong%3E%EF%BC%9F">为什么选择 <strong>vbman2</strong>？</h3>
+<p>随着互联网的不断发展，许多 VB6 开发者都面临一个问题：如何将现代网页技术与老旧的 VB6 应用结合？ 🤔 在这里，<strong>vbman2</strong> 的出现正是为了弥补这一差距。它基于 <strong>WebView2</strong> 技术，能够轻松加载现代网页内容，支持 JavaScript、CSS 和 HTML5，带来流畅、现代化的浏览器体验！🌐💨</p>
+<h4 id="%F0%9F%9B%A0%EF%B8%8F-%3Cstrong%3E%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%3C/strong%3E%EF%BC%9A">🛠️ <strong>核心功能</strong>：</h4>
+<ul>
+<li><strong>支持现代网页</strong>：借助 <strong>WebView2</strong>，<strong>vbman2</strong> 可以无缝加载 HTML5 页面、运行 JavaScript，并显示现代网页，助力你的 VB6/VBA 项目与时俱进！🌍</li>
+<li><strong>简易集成</strong>：无论你是资深的 VB6 开发者，还是刚刚接触的 VBA 用户，<strong>vbman2</strong> 都能轻松集成到你的项目中。安装和使用简单，快速上手！⚡</li>
+<li><strong>网页采集</strong>：你可以使用 <strong>vbman2</strong> 来抓取和分析网页数据，轻松实现数据采集，自动化处理各种网络任务！📊🤖</li>
+<li><strong>自定义界面</strong>：控件提供了丰富的 API，支持自定义导航、交互和事件处理，完全满足你的项目需求！🔧🎨</li>
+</ul>
+<h4 id="%F0%9F%8C%9F-%3Cstrong%3E%E6%88%91%E4%BB%AC%E7%9A%84%E6%84%BF%E6%99%AF%3C/strong%3E%EF%BC%9A">🌟 <strong>我们的愿景</strong>：</h4>
+<p>我们希望 <strong>vbman2</strong> 能够帮助每一个 VB6/VBA 开发者，不仅能访问现代网页，还能让你轻松管理和使用 Web 内容。无论你是需要在老旧系统中显示网页，还是进行数据采集、自动化测试，<strong>vbman2</strong> 都是你的最佳选择！🛠️💡</p>
+<h3 id="%E9%A6%96%E5%8F%91%E7%89%B9%E5%88%AB%E4%BC%98%E6%83%A0%F0%9F%8E%81">首发特别优惠🎁</h3>
+<p>本次首发是免费版, 没有任何限制, 🎉🎉，将来我们会基于这个版本迭代, 作为付费计划, 加入更多高级功能特性, 让你的 VB6 项目与现代化网页技术无缝对接，轻松提升效率！</p>
+<p>🔗 <strong>立即体验</strong>：<a href="http://hsk.a-vi.com:5080/kodexplorer/index.php?share/file&amp;user=1&amp;sid=mCnw9Atv"  target="_blank">点击这里下载 vbman2</a></p>
+<h3 id="%E7%AB%8B%E5%8D%B3%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC%EF%BC%8C%E4%B8%80%E8%B5%B7%E5%BC%80%E5%90%AF%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%85%EF%BC%81%F0%9F%8C%9F">立即加入我们，一起开启未来的开发之旅！🌟</h3>
+<p>无论你是要为老旧项目添砖加瓦，还是开发全新的 Web 集成功能，<strong>vbman2</strong> 都是你不容错过的强力工具。赶快下载体验吧！🚀💻</p>
+<p>感谢大家一直以来的支持，今天，我们迈出了重要的一步，期待与各位一起走向更加现代化的开发世界！🙌</p>
+<p><strong>#vbman2 #VB6 #VBA #WebView2 #浏览器控件 #Web采集 #技术创新</strong> 🌐🚀</p>
+<hr />
+<p>希望这个开场白符合你的需求！如果有任何修改或者添加的要求，随时告诉我！</p>
+<h3 id="%E8%87%AA%E5%B8%A6%E5%9F%BA%E7%A1%80%E7%A4%BA%E4%BE%8B">自带基础示例</h3>
+<p><a href="http://hsk.a-vi.com:5080/kodexplorer/index.php?share/file&amp;user=1&amp;sid=37khpsuF"  target="_blank">点击这里下载 示例</a></p>
+<h3 id="%E6%8D%90%E8%B5%A0%E6%9C%AC%E9%A1%B9%E7%9B%AE">捐赠本项目</h3>
+<p>如果本项目对你有帮助, 欢迎捐赠, 鼓励迭代发展!</p>
+<div id="big_btn_wrapper">
+    <a class="btn" href="/vbman2/about/Donate.html">立即打赏</a>
+</div>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/tbman/start/Install.html">
+                            <span class="label">安装指引</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>
