@@ -1,7 +1,7 @@
 ---
 title: 首页
-keywords: VB6/VBA, WebView2浏览器控件, 可做采集
-desc: VB6/VBA可用的WebView2浏览器控件(可做采集)
+keywords: twinbasic, tbman, Toolkit
+desc: TBMAN ✨ – A Rapid Development Toolkit for TwinBasic Developers
 id: home_page
 ---
 
