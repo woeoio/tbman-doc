@@ -14,6 +14,8 @@ items:
   - label: 更多...
     file: dev/more.md
   - label: 关于
+  - label: 协作
+    file: about/Collaboration.md
   - label: 致谢
     file: about/OfThanks.md
   - label: 捐赠
