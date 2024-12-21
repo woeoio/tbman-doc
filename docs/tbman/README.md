@@ -13,7 +13,7 @@ TBMAN是一个面向 TwinBasic 开发者设计的快速开发工具集合，它�
 
 ---
 
-## 💌 为什么选择 TBMAN？
+## 💡 为什么选择 TBMAN？
 
 ### 📚 优势一：降低开发成本
 TBMAN 通过定义并集成大量通用函数，提高了开发任务的自动化程度，大大降低你写重复代码的时间。
@@ -58,3 +58,11 @@ TBMAN 采用构件化和模块化设计，可进行无界制的扩充，将会�
     <a class="btn" href="/tbman/about/Donate.html">立即打赏</a>
 </div>
 
+
+## 🕵️‍♂️ 加入我们一起交流
+<div>
+    欢迎入群： 788160802
+    <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=edaLl-56q2E9PBRuBEZEBwV-wvVaEmrz&authKey=0KAufrkYd6U5SsjCqj86o42U9ifEs%2FIYIU8042W4iI8l%2FvqqBdkU64VXyHLpwt4h&noverify=0&group_code=788160802" target="_blank">
+    点击链接加入群聊【TwinBasic开发交流】
+    </a>
+</div>

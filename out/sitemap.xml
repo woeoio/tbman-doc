@@ -7,6 +7,30 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/about/Collaboration.html</loc>
+            <lastmod>2024-12-07</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/about/Donate.html</loc>
+            <lastmod>2024-12-07</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/about/OfThanks.html</loc>
+            <lastmod>2024-12-07</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/tbman/dev/01_Events.html</loc>
+            <lastmod>2024-12-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/02_Methods.html</loc>
             <lastmod>2024-12-05</lastmod>
             <changefreq>weekly</changefreq>
@@ -32,30 +56,6 @@
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/06_DeveloperTools.html</loc>
-            <lastmod>2024-12-05</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/about/Collaboration.html</loc>
-            <lastmod>2024-12-07</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/about/Donate.html</loc>
-            <lastmod>2024-12-07</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/about/OfThanks.html</loc>
-            <lastmod>2024-12-07</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>http://doc.twinbasic.com.cn/tbman/dev/01_Events.html</loc>
             <lastmod>2024-12-05</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
