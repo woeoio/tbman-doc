@@ -2,3 +2,6 @@ items:
   - label: 简介
   - label: 欢迎使用
     file: README.md
+  - label: 杂项
+  - label: 资源文件管理
+    file: other/Resources.md    
