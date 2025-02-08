@@ -2,6 +2,11 @@ items:
   - label: 简介
   - label: 欢迎使用
     file: README.md
+  - label: IDE
+  - label: 窗体属性详解
+    file: ide/Form.md   
+  - label: 设置窗体的背景色
+    file: ide/FormBG.md            
   - label: 杂项
   - label: 资源文件管理
     file: other/Resources.md    
