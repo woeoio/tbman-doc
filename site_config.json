@@ -9,7 +9,7 @@
         "docs": {
             "/twinbasic/": "docs/twinbasic",
             "/tbman/": "docs/tbman",
-            "/vb6/": "docs/vb6"
+            "/official/": "docs/official"
         },
         "pages": {
             "/": "pages/index"

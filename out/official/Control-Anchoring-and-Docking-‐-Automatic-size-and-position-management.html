@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Anchoring - 开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class=""><a  href="/tbman/">tbman</a></li>
+<li class="active"><a  href="/official/">官方文档</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="not_active with_link"><a href="/official/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/Install.html&from=/official/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/KnownIssues.html&from=/official/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/ChangeLog.html&from=/official/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/hello.html&from=/official/dev/hello.html"><span class="label">快速入门</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/more.html&from=/official/dev/more.html"><span class="label">更多...</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Collaboration.html&from=/official/about/Collaboration.html"><span class="label">协作</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/OfThanks.html&from=/official/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Donate.html&from=/official/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Anchoring</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2024-07-09">
+                                    2024-07-09
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>One of the new form designer features you see in twinBASIC is the 'Anchors' property:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/b26da59b-4e98-40b7-b97b-bb3cef4ca1d0" alt="image" /></p>
+<p>Clicking the arrow on the left expands it to provide 4 options:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/d5dff8f5-c5fa-4620-ba11-430d06276b27" alt="image" /></p>
+<p>These control whether the position of each point relative to the borders of their parent form or control container are maintained when the form is resized. By default it behaves in the expected manner; the top and left stay the same, and the control is not resized or moved with the form unless you do this manually with code, typically in the <code>Form_Resize</code> event. These provide an alternative to handle sizing and moving automatically.</p>
+<p>If a control is anchored at all 4 positions, it will be resized in both dimensions along with the form:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/fddbffa9-2b71-47f5-b925-e67fc66b9e5c" alt="image" /></p>
+<p>As you can see, all anchor points were kept a constant distant from the edge, resulting in the control being resized. If you anchored only the Top, Left, and Bottom, it will be resized vertically, but not horizontally:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/3fa1cf2b-0af5-44ae-ae6a-3c0662f51f57" alt="image" /></p>
+<p>Right was not anchored to the edge, so it didn't move with the edge.</p>
+<p>If you remove the anchors to the Top and Left (False) but maintain the Right and Bottom anchors (True), the control will move with the Bottom and Right:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/0aeb25f6-d864-4ebb-a9f5-bbd7b5d242e8" alt="image" /></p>
+<p>The control stayed the same size, and because the Right and Bottom were anchored to the edge, they moved with the form, resulting in the whole control moving.</p>
+<h3 id="Control-Containers">Control Containers</h3>
+<p>The above examples illustrate how this works with controls directly on a Form. But what if they're inside a Frame or other control container? The anchors are relative to their parent, so resizing a Form won't resize or move a control inside a Frame unless the Frame is also anchored in a way that changes its size/position.</p>
+<p>For example, if a TextBox is anchored at all 4 points, inside a Frame anchored at all 4 points, then it will resize along with the Frame:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/4829696d-788b-40ee-bebd-5afa44477460" alt="image" /></p>
+<p>If we remove the Bottom anchor from the TextBox, but not the Frame, the Frame will be resize along the bottom, but the TextBox will not:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/bc9f3756-a14b-4ee7-b819-6822497b640a" alt="image" /></p>
+<p>Using these 4 points you can automatically maintain a relative size, position, or both, without having to manually code any of it.</p>
+<blockquote>
+<p>[!TIP]<br />
+Reminder, twinBASIC also adds <code>MinWidth</code>, <code>MinHeight</code>, <code>MaxWidth</code>, and <code>MaxHeight</code> properties to a Form, so those can also be automatically managed in combination with control anchors. You may want to set a minimum size so that controls do not disappear.</p>
+</blockquote>
+<h1 id="Docking">Docking</h1>
+<p>Similar to anchoring but slightly different, tB also offers a 'Dock' property:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/4c8b881e-1216-4819-a558-d2ce20f47fcd" alt="image" /></p>
+<p>You might already be familiar with how a StatusBar control locks itself to the bottom of a form; that's the kind of positioning this property controls. A control can be docked on any side, and it will stay sized to the full width or height, and move with, that side of the Form or parent container. For example, a CommandButton with <code>vbDockBottom</code>:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/599a66ad-31d5-449f-bbf5-00963fe9aa2a" alt="image" /></p>
+<p>Besides the four sides, there's a final option: <code>vbDockFill</code>. This will have the control fill its entire parent area. This is most useful when used with a container such as a PictureBox or Frame control-- it will fill only that container when its a child of it, not the whole form.</p>
+<p><code>vbDockFill</code> will exclude other docked controls, so you could for instance have one control with <code>vbDockRight</code> and another with <code>vbDockFill</code> that covers the rest of the Form or container while the first control stays in position on the right.</p>
+<h3 id="Multiple-Controls">Multiple Controls</h3>
+<p>As the end of the last section suggests, it's possible to dock more than one control to the same location, such as a CommandButton and TextBox docked to the bottom. The following example also shows a PictureBox control with the <code>vbDockRight</code> + <code>vbDockFill</code> example from above:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/80185a8d-2952-415f-bc02-ec3ddea89568" alt="image" /></p>
+<blockquote>
+<p>[!TIP]<br />
+The order of two (or more) controls docked in the same position is determined by which was set first. Currently they can't be dragged to rearranged, but you can set the Dock property back to none, and re-do them in the desired order.</p>
+</blockquote>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

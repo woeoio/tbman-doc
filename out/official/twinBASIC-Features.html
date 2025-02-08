@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class=""><a  href="/tbman/">tbman</a></li>
+<li class="active"><a  href="/official/">官方文档</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="not_active with_link"><a href="/official/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/Install.html&from=/official/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/KnownIssues.html&from=/official/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/ChangeLog.html&from=/official/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/hello.html&from=/official/dev/hello.html"><span class="label">快速入门</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/more.html&from=/official/dev/more.html"><span class="label">更多...</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Collaboration.html&from=/official/about/Collaboration.html"><span class="label">协作</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/OfThanks.html&from=/official/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Donate.html&from=/official/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1></h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2024-07-09">
+                                    2024-07-09
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>This page is intended to list and briefly describe all new features that twinBASIC brings compared to VBx, and assumes existing familiarity with the principles of programming in the BASIC language. They are categorized with the following sections:</p>
+<ul>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#language-syntax"  target="_blank">Language Syntax</a></li>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#project-configuration"  target="_blank">Project Configuration</a></li>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#attributes"  target="_blank">Attributes</a></li>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#standard-library"  target="_blank">Standard Library</a></li>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#gui-components"  target="_blank">GUI components</a> (e.g. controls and forms)</li>
+<li><a href="https://github.com/twinbasic/documentation/wiki/twinbasic-features#design-experience"  target="_blank">Design Experience</a></li>
+</ul>
+<h1 id="Attributes">Attributes</h1>
+<p>Attributes have two major functions; they can act as instructions to compiler to influence how code is generated, or to annotate an element (Forms, Modules, Classes, Types, Enums, Declares, Subs/Functions, etc.) In VBx, attributes are present but are not exposed via the code pane and uses cryptic syntax that is hard to use via the source file. Previously in VBx, some attributes like a procedure description, hidden attribute, and default member were set via hidden text the editor didn't show you, configured via the Procedure Attributes dialog or some other places. In tB, these are all visible in the code editor. The legacy ones from VBx are supported for compatibility, but new attributes utilize the following syntax:\<br />
+<code>[Attribute]</code> or <code>[Attribute(value)]</code>\<br />
+Many of the following items will have their associated attributes described, then miscellaneous ones will be described later on.</p>
+<h1 id="64bit-Compilation">64bit Compilation</h1>
+<p>twinBASIC can compile native 64bit executables in addition to 32bit. The syntax is compatible with VBA7 for this: the <code>LongPtr</code> data type and the requirement (in 64bit mode) to mark APIs <code>PtrSafe</code>, e.g.:\<br />
+<code>Public Declare PtrSafe Sub foo Lib &quot;bar&quot; (ByVal hWnd As LongPtr)</code></p>
+<blockquote>
+<p>[!IMPORTANT]<br />
+There is a lot more required to get most 32bit apps to work properly as 64bit. Only some <code>Long</code> variables are to be changed, and this is determined by their C/C++ data types, of which there are many. Examples that need to be <code>LongPtr</code> include handles like <code>HWND, HBITMAP, HICON,</code> and <code>HANDLE</code>; pointers like <code>void*, PVOID, ULONG_PTR, DWORD_PTR,</code> and <code>LPWSTR/PWSTR/LPCWSTR/WCHAR*</code> when passed as <code>Long</code>; and the <code>SIZE_T</code> type found in CopyMemory and memory allocation functions.\<br />
+Additionally, any code working with memory pointers must account for the fact all the types mentioned (and the many more not), as well as v-table entries, are now either 4 or 8 bytes, when most programmers have traditionally hard coded 4 bytes. There are also UDT alignment issues more frequently. This is all very complex and you should seek resources and advice when moving to 64bit (though remember, 32bit is still supported so this isn't a requirement).</p>
+</blockquote>
+<h1 id="Language-Syntax">Language Syntax</h1>
+<h2 id="New-data-types">New data types</h2>
+<ul>
+<li><code>LongPtr</code> Meant primarily to handle pointers, <code>LongPtr</code> is a 4-byte (32 bits) signed integer in 32bit mode, and a signed 8-byte integer (64 bits) in 64bit mode.</li>
+<li><code>LongLong</code> A signed 8-byte (64 bits) integer, ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. Note that this type is available in both 32bit and 64bit mode (VBA restricts it to 64bit mode).</li>
+<li><code>Decimal</code> In twinBASIC, <code>Decimal</code> is implementented as a full, regular data type, in addition to use within a <code>Variant</code>. This is a 16-byte (128 bits) type which holds a 12-byte (96 bits) integer with variable decimal point scaling and sign bit information. Values range from -79,228,162,514,264,337,593,543,950,335 to 79,228,162,514,264,337,593,543,950,335.</li>
+<li>All of the datatype management features also exist for these types: <code>DefDec</code>/<code>DefLngLng</code>/<code>DefLongPtr</code>, <code>CDec</code>/<code>CLngLng</code>/<code>CLongPtr</code>, and <code>vbDecimal</code>/<code>vbLongLong</code>/<code>vbLongPtr</code> constants for type checking.</li>
+</ul>
+<h2 id="Interfaces-and-coclasses">Interfaces and coclasses</h2>
+<h3 id="Defining-interfaces">Defining interfaces</h3>
+<p>twinBASIC supports defining COM interfaces using BASIC syntax, rather than needing an type library with IDL and C++. These are only supported in .twin files, not in legacy .bas or .cls files. They must appear <em>before</em> the <code>Class</code> or <code>Module</code> statement, and will always have a project-wide scope. the The generic form for this is as follows:</p>
+
+<pre class="language-vba"><code class="language-vba">[InterfaceId (&quot;00000000-0000-0000-0000-000000000000&quot;)]
+*&lt;attributes&gt;*
+Interface &lt;name&gt; Extends &lt;base-interface&gt;
+    *&lt;attributes&gt;*
+    &lt;method 1&gt;
+    *&lt;attributes&gt;*
+    &lt;method 2&gt;
+    ...
+End Interface
+</code></pre>
+<p>Methods can be any of the following: <code>Sub</code>, <code>Function</code>, <code>Property Get</code>, <code>Property Let</code>, or <code>Property Set</code>, with arguments following the standard syntax, and with the standard attributes available. These cannot be modified with <code>Public/Private/Friend</code>. <code>End &lt;method&gt;</code> is not used, as these are prototype definitions only.</p>
+<p>Available attributes for interfaces currently include:</p>
+<ul>
+<li><p><code>[Description(&quot;text&quot;)]</code> - Provides a description in information popups, and is exported as a <code>helpstring</code> attribute in the type library (if applicable).</p>
+</li>
+<li><p><code>[Hidden]</code> - Hides the interface from certain Intellisense and other lists.</p>
+</li>
+<li><p><code>[Restricted]</code> - Restricts the interface methods from being called in most contexts.</p>
+</li>
+<li><p><code>[OleAutomation(True/False)]</code> - Controls whether this attribute is applied in the typelibrary. This attribute is set to <strong>True</strong> by default.</p>
+</li>
+<li><p><code>[ComImport]</code> - Specifies that an interface is an import from an external COM library, for instance, the Windows shell.</p>
+</li>
+<li><p><code>[COMExtensible(True/False)]</code> - Specifies whether new members added at runtime can be called by name through an interface implementing IDispatch. This attribute is set to <strong>False</strong> by default.</p>
+</li>
+</ul>
+<p>Available attributes for methods currently include:</p>
+<ul>
+<li><p><code>[Description(&quot;text&quot;)]</code> - See above.</p>
+</li>
+<li><p><code>[PreserveSig]</code> - For COM interfaces, normally methods return an HRESULT that the language hides from you. The <code>[ PreserveSig ]</code> attribute overrides this behavior and defines the function exactly as you provide. This is neccessary if you need to define it as returning something other than a 4-byte <code>Long</code>, or want to handle the result yourself, bypassing the normal runtime error raised if the return value is negative (this is helpful when a negative value indicates an expected, acceptable failure, rather than a true error, like when an enum interface is out of items).</p>
+</li>
+<li><p><code>[DispId(number)]</code> - Defines a dispatch ID associated with the method.</p>
+</li>
+</ul>
+<h4 id="Example">Example</h4>
+
+<pre class="language-vba"><code class="language-vba">[InterfaceId(&quot;E7064791-0E4A-425B-8C8F-08802AAFEE61&quot;)]
+[Description(&quot;Defines the IFoo interface&quot;)]
+[OleAutomation(False)]
+Interface IFoo Extends IUnknown
+    Sub MySub(Arg1 As Long)
+    Function Clone() As IFoo
+    [PreserveSig]
+    Function MyFunc([TypeHint(MyEnum)] Arg1 As Variant) As Boolean
+End Interface 
+</code></pre>
+<p>(Where MyEnum is a standard <code>Enum ... End Enum</code> block.</p>
+<h3 id="Defining-coclasses">Defining coclasses</h3>
+<p>In addition to interfaces, twinBASIC also allows defining coclasses-- creatable classes that implement one or more defined interfaces. Like interfaces, these too must be in .twin files and not legacy .bas/.cls files, and must appear prior to the <code>Class</code> or <code>Module</code> statement. The generic form is:</p>
+
+<pre class="language-vba"><code class="language-vba">[CoClassId(&quot;00000000-0000-0000-0000-000000000000&quot;)]
+*&lt;attributes&gt;*
+CoClass &lt;name&gt;
+    [Default] Interface &lt;interface name&gt;
+    *[Default, Source] Interface &lt;event interface name&gt;*
+    *&lt;additional Interface items&gt;*
+End CoClass
+</code></pre>
+<p>Each coclass must specify a <code>[Default]</code> interface, a source interface and additional interfaces are optional. Each represents a contract that the class will provide an implementation of the given interface. Note that at this time, twinBASIC does not yet support defining <code>dispinterface</code> interfaces, the usual form of Source interfaces for events.</p>
+<p>The attributes available for coclasses are as follows:</p>
+<ul>
+<li><code>[Description(&quot;text&quot;)]</code> - Provides a description in info popups and other places.</li>
+<li><code>[ComCreatable(True/False)]</code> - Indicates that this coclass can be created with the <code>New</code> keyword. This is <em>True</em> by default.</li>
+<li><code>[AppObject]</code> - Indicates the class is part of the global namespace. You should not include this attribute without a full understanding of the meaning.</li>
+<li><code>[Hidden]</code> - Hides the coclass from appearing in certain places.</li>
+</ul>
+<h4 id="Example">Example</h4>
+
+<pre class="language-vba"><code class="language-vba">[CoClassId(&quot;52112FA1-FBE4-11CA-B5DD-0020AFE7292D&quot;)]
+CoClass Foo
+   [Default] Interface IFoo
+   Interface IBar
+End CoClass
+</code></pre>
+<p>Where <code>IFoo</code> and <code>IBar</code> are interface defined with the <code>Interface</code> syntax described earlier.</p>
+<h3 id="Enhancements-to-%3Ccode%3EImplements%3C/code%3E">Enhancements to <code>Implements</code></h3>
+<ul>
+<li><p><code>Implements</code> in twinBASIC is allowed on inherited interfaces-- for instance, if you have <code>Interface IFoo2 Extends IFoo</code>, you then use <code>Implements IFoo2</code> in a class, where in VBx this would not be allowed. You'll need to provide methods for all inherited interfaces (besides <code>IDispatch</code> and <code>IUnknown</code>). The class will mark all interfaces as available-- you don't need a separate statement for <code>IFoo</code>, it will be passed through <code>Set</code> statements (and their underlying <code>QueryInterface</code> calls) automatically.</p>
+</li>
+<li><p>If you have an interface multiple others extend from, you can write multiple implementations, or specify one implementation for all. For example:</p>
+
+<pre class="language-vba"><code class="language-vba">IOleWindow_GetWindow() As LongPtr _
+  Implements IOleWindow.GetWindow, IShellBrowser.GetWindow, IShellView2.GetWindow
+</code></pre>
+</li>
+<li><p><code>Implements</code> allowed on interfaces with 'As Any' parameters: In VBx, you'd get an error if you attempted to use any interface containing a member with an <code>As Any</code> argument. With twinBASIC, this is allowed if you substitute <code>As LongPtr</code> for <code>As Any</code>, for example:</p>
+
+<pre class="language-vba"><code class="language-vba">Interface IFoo Extends IUnknown
+    Sub Bar(ppv As Any)
+End Interface
+
+Class MyClass
+Implements IFoo
+
+Private Sub IFoo_Bar(ppv As LongPtr) Implements IFoo.Bar
+
+End Sub
+</code></pre>
+</li>
+<li><p><code>Implements Via</code> for basic inheritance\</p>
+</li>
+</ul>
+<p>It's now possible to have simple inheritance among classes. For example, if you have class cVehicle which implements IVehicle containing method Honk, you could create child classes like cCar or cTruck, which inherit the methods of the original, so you could call cCar.Honk without writing a separate implementation. Here's what this looks like as code:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/b0724fe2-636d-47db-a8fc-531a585ddaf9" alt="image" /></p>
+<p>You can see that the Honk method is only implemented by the parent class, then called from the child class when you click the CodeLens button to run the sub in place from the IDE.</p>
+<h2 id="Static-linking-of-OBJ-and-LIB-files">Static linking of OBJ and LIB files</h2>
+<p>tB allows you to use properly compiled .lib and .obj files as statically linked libraries, using declares similar to DLLs, only referring a lib/obj file in your Miscellaneous files folder of your project. Once the file is in the project, it's set up with this syntax outside of declares, example from the sqlite sample:</p>
+
+<pre class="language-vba"><code class="language-vba">#If Win64 Then
+    Import Library &quot;/Miscellaneous/sqlite3_64.obj&quot; As SQLITE3 Link &quot;stdlib&quot;, &quot;kernel32&quot;
+#Else
+    Import Library &quot;/Miscellaneous/sqlite3_32.obj&quot; As SQLITE3 Link &quot;stdlib&quot;, &quot;kernel32&quot;
+#End If
+
+Generically:
+
+    Import Libary &quot;Relative resource path&quot; As NAMESPACE Link &quot;dependency1&quot;, &quot;dependency2&quot;, ...
+</code></pre>
+<p>After that, you can use NAMESPACE in place of a DLL name, inside class/module declares:</p>
+
+<pre class="language-vba"><code class="language-vba">' Compiled sqlite-amalgamation-3440200 (v3.44.2) 
+'   using cmdline (MSVC):  cl /c /Gw /Gy /GS- /DSQLITE_OMIT_SEH sqlite3.c
+#If Win64 Then
+    Import Library &quot;/Miscellaneous/sqlite3_64.obj&quot; As SQLITE3 Link &quot;stdlib&quot;, &quot;kernel32&quot;
+#Else
+    Import Library &quot;/Miscellaneous/sqlite3_32.obj&quot; As SQLITE3 Link &quot;stdlib&quot;, &quot;kernel32&quot;
+#End If
+
+Module MainModule
+
+    Declare PtrSafe Function sqlite3_open CDecl Lib SQLITE3 (ByVal filename As String, ByRef ppDb As LongPtr) As Long
+    Declare PtrSafe Function sqlite3_exec CDecl Lib SQLITE3 (ByVal pDb As LongPtr, ByVal sql As String, ByVal exec_callback As LongPtr, ByVal udp As LongPtr, ByRef errmsg As LongPtr) As Long
+...
+</code></pre>
+<blockquote>
+<p>[!NOTE]<br />
+StdCall names will be mangled with argument sizes, e.g. <code>int myfunc(int x, short y);</code> would be <code>myfunc@6</code>. It therefore may be better to use <code>CDecl</code>.</p>
+</blockquote>
+<p>A documentation page will be dedicated to more fully explaining this in the future; for now if you need help with it, visit the tB Discord or Discussions section of the GitHub repository and ask.</p>
+<h2 id="Type-Inference">Type Inference</h2>
+<p>Variables can now be declared <code>As Any</code> and their type will be inferred, similar to C++'s <code>auto</code>.\<br />
+<code>Dim x As Any = 5&amp;' would result in x being a</code>Long`.</p>
+<p>This is only for the <code>Dim</code> statement; arguments cannot be <code>As Any</code> except in API declarations.</p>
+<h2 id="New-operators">New operators</h2>
+<ul>
+<li><p>Bitshift operators <code>&lt;&lt;</code> and <code>&gt;&gt;</code> perform left-shift and right-shift operations on a numeric variable. Note that shifts beyond available size result in 0, not wrapping.</p>
+</li>
+<li><p><code>vbNullPtr</code> - Allows passing null pointers to UDT members of APIs/interfaces. The equivalent behavior in VBx is to declare them <code>As Any</code> and then pass <code>ByVal 0</code> at call sites.</p>
+<p><strong>Example</strong></p>
+
+<pre class="language-vba"><code class="language-vba">Type Foo
+   bar As Long
+End Type
+Public Declare PtrSafe Function MyFunc Lib &quot;MyDLL&quot; (pFoo As Foo) As Long
+
+Private Sub CallMyFunc()
+    Dim ret As Long = MyFunc(vbNullPtr)
+End Sub
+</code></pre>
+</li>
+</ul>
+<p>Additionally, while not strictly new syntax, twinBASIC also adds support for <code>ByVal Nothing</code>, to override a <code>ByRef &lt;interface&gt;</code> argument and pass a null pointer there.</p>
+<ul>
+<li>Short-circuit conditional operators <code>OrElse</code> and <code>AndAlso</code>. With the regular <code>Or</code> and <code>And</code> statements, both sides are evaluated, even when not necessary. With a short circuit operator, if the condition is resolved by the first side, the other side is not evaluated. So if you have:</li>
+</ul>
+<p><code>If Condition1 OrElse Condition2 Then</code>, if Condition1 is <code>True</code>, then <code>Condition2</code> will not be evaluated, and any code called by it will not run.</p>
+<ul>
+<li><p>Short-circuit <code>If()</code> operator with syntax identical to the tradition <code>IIf</code>. This has the additional benefit of not converting variables into a <code>Variant</code> if they're the same type; i.e. <code>If(condition, Long, Long)</code> the <code>Long</code> variables will never become a <code>Variant</code>.</p>
+</li>
+<li><p>New assignment operators: <code>+= -= /= *= ^= &amp;= &lt;&lt;= &gt;&gt;=</code></p>
+<p>These are the equivalent of <code>var = var (operand) (var2)</code>. So <code>i += 1</code> is the equivalent of <code>i = i + 1</code>.</p>
+</li>
+<li><p><code>IsNot</code> operator: The logical opposite of the <em>Is</em> operator for testing object equivalence. For example, instead of <code>If (object Is Nothing) = False</code> you could now write <code>If object IsNot Nothing Then</code>.</p>
+</li>
+</ul>
+<h2 id="New-literals-notation">New literals notation</h2>
+<h3 id="Binary-literals%3Cbr%3E">Binary literals<br></h3>
+<p>In addition to <code>&amp;H</code> for hexadecimal literals and <code>&amp;O</code> for octal notation, twinBASIC also provides <code>&amp;B</code> for binary notation. For example, <code>Dim b As Long = &amp;B010110</code> is valid syntax, and b = 22.</p>
+<h3 id="Digit-grouping">Digit grouping</h3>
+<p>The &amp;H, &amp;O, and &amp;B literals can all be grouped using an underscore, for example, grouping a <code>Long</code> by it's constituent binary byte groups: <code>&amp;B10110101_10100011_10000011_01101110</code>, or grouping a <code>LongLong</code> as two <code>Long</code> groups: <code>&amp;H01234567_89ABCDEF</code>.</p>
+<h2 id="Thread-safety/multithreading-support">Thread safety/multithreading support</h2>
+<p>While there's no native language syntax yet (planned), you can call <code>CreateThread</code> directly with no hacks. Previously, VBx and other BASIC languages typically required elaborate workarounds to be able to use <code>CreateThread</code> for anything but some specialized, extremely simple things. In twinBASIC, you can call it and all other threading APIs without any special steps, other than of course the careful management of doing threading at a low level like this.</p>
+<h3 id="Example">Example</h3>
+<p>In a new Standard EXE project, add a CommandButton and TextBox to your form:</p>
+
+<pre class="language-vba"><code class="language-vba">    Private Declare PtrSafe Function GetCurrentThreadId Lib &quot;kernel32&quot; () As Long
+
+    Private Declare PtrSafe Function CreateThread Lib &quot;kernel32&quot; ( _
+                            ByRef lpThreadAttributes As Any, _
+                            ByVal dwStackSize As Long, _
+                            ByVal lpStartAddress As LongPtr, _
+                            ByRef lpParameter As Any, _
+                            ByVal dwCreationFlags As Long, _
+                            ByRef lpThreadId As Long) As LongPtr
+
+    Private Declare PtrSafe Function WaitForSingleObject Lib &quot;kernel32&quot; ( _
+                            ByVal hHandle As LongPtr, _
+                            ByVal dwMilliseconds As Long) As Long
+
+
+
+    Private Const INFINITE = -1&amp;
+
+    Private Sub Command1_Click() Handles Command1.Click
+        Dim lTID As Long
+        Dim lCurTID As Long
+        Dim hThreadNew As LongPtr
+        lCurTID = GetCurrentThreadId()
+        hThreadNew = CreateThread(ByVal 0, 0, AddressOf TestThread, ByVal 0, 0, lTID)
+        Text1.Text = &quot;Thread &quot; &amp; lCurTID &amp; &quot; is waiting on thread &quot; &amp; lTID
+        Dim hr As Long
+        hr = WaitForSingleObject(hThreadNew, 30000&amp;) 'Wait 30s as a default. You can use INFINITE instead if you never want to time out.
+        Text1.Text = &quot;Wait end code &quot; &amp; CStr(hr)
+    End Sub
+
+    Public Sub TestThread()
+        MsgBox &quot;Hello thread&quot;
+    End Sub
+</code></pre>
+<p>Under a single-threaded code, if you called <code>TestThread</code> before updating <code>Text1.Text</code>, the text wouldn't update until you clicked ok on the message box. But here, the message box in launched in a separate thread, so execution continues and updates the text, after which we manually choose to wait for the message box thread to exit.</p>
+<h2 id="Improvements-to-%3Ccode%3EAddressOf%3C/code%3E">Improvements to <code>AddressOf</code></h2>
+<p><code>AddressOf</code> can be now be used on class/form/usercontrol members, including from outside the class by specifying the instance. Also, no need for <code>FARPROC</code>-type functions, you can use it like <code>Ptr = AddressOf Func</code>. So if you have class <code>CFoo</code> with member function <code>bar</code>, the following is valid:</p>
+
+<pre class="language-vba"><code class="language-vba">Dim foo1 As New CFoo
+Dim lpfn As LongPtr = AddressOf foo1.bar
+</code></pre>
+<h2 id="Enhanced-pointer-functionality">Enhanced pointer functionality</h2>
+<p>The <code>CType(Of &lt;type&gt;)</code> operator specifies an explicit intent to cast one type to another. This can be used for casting <code>LongPtr</code> (or <code>Long</code> on 32bit/<code>LongLong</code> on 64bit) to a custom user-defined type, with or without making a copy of it, depending on the usage. This allows not just for casting directly without a <code>CopyMemory</code> call, but also, setting the members of a UDT represented only by a pointer, without copying memory back and forth.</p>
+<p>Consider the following UDTs:</p>
+
+<pre class="language-vba"><code class="language-vba">Private Type foo
+    a As Long
+    b As Long
+    pfizz As LongPtr 'A pointer to a variable of type fizz
+End Type
+Private Type bar
+    pfoo As LongPtr 'A pointer to a variable of type foo
+End Type
+Private Type fizz
+    c As Long
+End Type
+</code></pre>
+<p>The following codes examples work to manipulate the pointers:</p>
+
+<pre class="language-vba"><code class="language-vba">Sub call1()
+    Dim f As foo
+    test1 VarPtr(f)
+    Debug.Print f.a, f.b
+End Sub
+Sub test1(ByVal ptr As LongPtr)
+    With CType(Of foo)(ptr)
+        .a = 1
+        .b = 2
+    End With
+End Sub
+</code></pre>
+<p>This will print <code>1 2</code>.</p>
+
+<pre class="language-vba"><code class="language-vba">Sub call2()
+    Dim f As foo, b As bar
+    b.pfoo = VarPtr(f)
+    test2 b
+    Debug.Print f.a, f.b
+End Sub
+Sub test2(b As bar)
+    With CType(Of foo)(b.pfoo)
+        .a = 3
+        .b = 4
+    End With
+End Sub
+</code></pre>
+<p>This will print <code>3 4</code></p>
+
+<pre class="language-vba"><code class="language-vba">Sub call3()
+    Dim f As foo, b As bar, z As fizz
+    f.pfizz = VarPtr(z)
+    b.pfoo = VarPtr(f)
+    test3 b
+    Debug.Print z.c
+End Sub
+Sub test3(b As bar)
+    CType(Of fizz)(CType(Of foo)(b.pfoo).pfizz).c = 4
+End Sub
+</code></pre>
+<p>Free standing use and nesting is also allowed; the above will print <code>4</code>. While the examples here are local code only, this is particularly useful for APIs, where you're forced to work with pointers extensively.</p>
+<h2 id="%3Ccode%3ELen/LenB%28Of-%26lt%3Btype%26gt%3B%29%3C/code%3E-Support"><code>Len/LenB(Of &lt;type&gt;)</code> Support</h2>
+<p>The classic <code>Len</code> and <code>LenB</code> functions can now be used to directly get the length/size of a type, both intrinsic and user-defined, without needing have declared a variable of that type. For instance, to know the pointer size, you can use <code>LenB(Of LongPtr)</code>.</p>
+<h2 id="Overloading">Overloading</h2>
+<p>twinBASIC supports overloading in two ways:</p>
+<h3 id="Overloading-by-type-of-argument">Overloading by type of argument</h3>
+<p>The following Subs are valid together in a module/class/etc:</p>
+
+<pre class="language-vba"><code class="language-vba">Sub foo(bar As Integer)
+'...
+End Sub
+
+Sub foo(bar As Long)
+'...
+End Sub
+
+Sub foo(bar As Double)
+'...
+End Sub
+</code></pre>
+<p>The compiler will automatically pick which one is called by the data type.</p>
+<h3 id="Overloading-by-number-of-arguments">Overloading by number of arguments</h3>
+<p>In addition to the above, you could also add the following:</p>
+
+<pre class="language-vba"><code class="language-vba">Sub Foo(bar1 As Integer)
+'...
+End Sub
+Sub Foo(bar1 As Integer, bar2 As Integer)
+'...
+End Sub
+</code></pre>
+<p>The compiler will automatically pick which one is called by the number and/or types of arguments.</p>
+<h2 id="Inline-variable-initialization">Inline variable initialization</h2>
+<p>You can now set initial values for variables inline, without needing a line-continuation character.</p>
+<p><strong>Examples</strong></p>
+<p><code>Dim i As Long = 1</code></p>
+<p><code>Dim foo As Boolean = bar()</code></p>
+<p><code>Dim arr As Variant = Array(1, 2, 3)</code></p>
+<h2 id="Generics">Generics</h2>
+<p>The following is an examples of generics use in tB:</p>
+
+<pre class="language-vba"><code class="language-vba">Public Function TCast(Of T)(ByRef Expression As T) As T
+Return Expression
+End Function
+</code></pre>
+<p>Which could be used e.g. to return a <code>Date</code> typed variable with <code>TCast(Of Date)(&quot;2021-01-01&quot;)</code></p>
+<h2 id="Enhancements-to-API/method-declarations">Enhancements to API/method declarations</h2>
+<h3 id="%3Ccode%3EDeclareWide%3C/code%3E"><code>DeclareWide</code></h3>
+<p>The <code>DeclareWide</code> keyword, in place of <code>Declare</code>, disables ANSI&lt;-&gt;Unicode conversion for API calls. This applies both directly to arguments, and to String arguments inside a UDT. For example, the following are equivalent in functionality:</p>
+
+<pre class="language-none"><code class="language-none">Public Declare PtrSafe Sub FooW Lib &quot;some.dll&quot; (ByVal bar As LongPtr)
+Public DeclareWide PtrSafe Sub Foo Lib &quot;some.dll&quot; Alias &quot;FooW&quot; (ByVal bar As String)
+</code></pre>
+<p>Both represent a fully Unicode operation, but the allows direct use of the <code>String</code> datatype without requiring the use of <code>StrPtr</code> to prevent conversion.</p>
+<blockquote>
+<p>[!WARNING]<br />
+This does <strong>not</strong> change the underlying data types-- the <code>String</code> type is a <code>BSTR</code>, not an <code>LPWSTR</code>, so in the event an API returns a pre-allocated <code>LPWSTR</code>, rather than filling a buffer you have created, it will not provide a valid <code>String</code> type. This would be the case where an API parameter is given as <code>[out] LPWSTR *arg</code>.</p>
+</blockquote>
+<h3 id="%3Ccode%3ECDecl%3C/code%3E-support"><code>CDecl</code> support</h3>
+<p>The cdecl calling convention is supported both for API declares and methods in your code. This includes DLL exports in standard DLLs. Examples:</p>
+<p><code>Private DeclareWide PtrSafe Function _wtoi64 CDecl Lib &quot;msvcrt&quot; (ByVal psz As String) As LongLong</code></p>
+
+<pre class="language-vba"><code class="language-vba">[ DllExport ]
+Public Function MyExportedFunction CDecl(foo As Long, Bar As Long) As Long
+</code></pre>
+<h3 id="%3Ccode%3E%5BPreserveSig%5D%3C/code%3E"><code>[PreserveSig]</code></h3>
+<p>The <code>[PreserveSig]</code> attribute was described earlier for COM methods, but it can also be used on API declares. For APIs, the default is <code>True</code>. So therefore, you can specify <code>False</code> in order to rewrite the last parameter as a return. Example:</p>
+
+<pre class="language-vba"><code class="language-vba">Public Declare PtrSafe Function SHGetDesktopFolder Lib &quot;shell32&quot; (ppshf As IShellFolder) As Long
+</code></pre>
+<p>can be rewritten as</p>
+
+<pre class="language-vba"><code class="language-vba">[PreserveSig(False)] 
+Public Declare PtrSafe Function SHGetDesktopFolder Lib &quot;shell32&quot; () As IShellFolder`
+</code></pre>
+<h2 id="Loop-control">Loop control</h2>
+<p>The following new statements are available for controlling the procession of loops:</p>
+<ul>
+<li><code>Continue For</code> - Proceed to the next iteration (or end) of <code>For</code> loop.</li>
+<li><code>Continue While</code> - Proceed to the next iteration (or end) of <code>While</code> loop.</li>
+<li><code>Continue Do</code> - Proceed to the next iteration of <code>Do</code> loop.</li>
+<li><code>Exit While</code> - Exit a <code>While</code> loop immediately.</li>
+</ul>
+<h2 id="%3Ccode%3EReturn%3C/code%3E-syntax-for-functions."><code>Return</code> syntax for functions.</h2>
+<p>You can now combine assigning a return value and exiting a function into a single statement like many other languages allow. This is accomplished with the <code>Return</code> keyword:</p>
+
+<pre class="language-vba"><code class="language-vba">Private Function Foo() As Long
+Dim i As Long = 1
+If i Then
+    Return i
+End If
+End Function
+</code></pre>
+<p>this is the equivalent of</p>
+
+<pre class="language-vba"><code class="language-vba">Private Function Foo() As Long
+Dim i As Long = 1
+If i Then
+    Foo = i
+    Exit Function
+End If
+End Function
+</code></pre>
+<p><code>Return</code> can be used for objects as well. It is currently only valid with a value specified and within a function; you cannot use <code>Return</code> without anything after it in a sub.</p>
+<h2 id="New-class-member-handler-syntax">New class member handler syntax</h2>
+<p>You can now separate the name of method from the class member it applies to.</p>
+<h3 id="%3Ccode%3EHandles%3C/code%3E-for-events"><code>Handles</code> for events</h3>
+<p>For events events on Forms, UserControls, and event-raising objects, you can define any method as the handler, rather than need to name it as <code>Object_Event()</code>, by following it with <code>Handles Object.Event</code>. For example, in a form, instead of <code>Private Sub Form_Load()</code> you could handle the <code>Load</code> event with <code>Private Sub OnLoad() Handles Form.Load</code>.</p>
+<h3 id="%3Ccode%3EImplements%3C/code%3E-for-interfaces"><code>Implements</code> for interfaces</h3>
+<p>Similar to the above, for forms/UCs/classes that use <code>Implements</code>, you can use <code>Sub Bar() Implements IFoo.Bar</code>. Note that you can specify more than one implemented method; for more information, see the Enhancements to Implements subsection of the Interfaces and Coclasses section detailing the new in-language syntax for defining these.</p>
+<blockquote>
+<p>[!NOTE]<br />
+These are opt-in and optional\<br />
+For compatibility, twinBASIC will always continue to support the traditional syntax for event handling and Implements, and you're not required to use this new syntax (or <em>any</em> of the additions described in this article). Whether or not automatically created prototypes use this syntax is controlled via IDE Options: &quot;IDE: Use new handles/implements syntax&quot;.</p>
+</blockquote>
+<h2 id="Custom-UDT-packing">Custom UDT packing</h2>
+<p>If you've done extensive work with the Windows API, every so often you'll come across user-defined types that have an extraneous member added called pad, padding, reserved, etc, that doesn't appear in the documentation for that type. This is the result of the UDT applying packing rules different from the default. By default, UDTs have hidden spacing bytes that make their largest sized member appear at a multiple of it's size, and making the entire UDT be a multiple of that size. Consider the following UDT:</p>
+
+<pre class="language-vba"><code class="language-vba">Private Type MyUDT
+    x As Integer
+    y As Long
+    z As Integer
+End Type
+Private t As MyUDT
+</code></pre>
+<p>If you ask for <code>Len(t)</code>, you get 8-- the sum of 2x2-byte Integers and 1 4-byte Long. But if you ask for <code>LenB(t)</code>, you get 12. This is because the largest size type is 4, so that's the packing alignment number. Each Long must appear at a multiple of 4 bytes, so 2 byte of hidden padding is inserted between x and y. You can see this for yourself by checking <code>VarPtr(t.y) - VarPtr(t)</code>. This gives you the starting offset of <code>y</code>-- which is 4, not 2 like you'd get if it immediately followed <code>x</code>. Finally, with the hidden 2 bytes, we're now up to 10 bytes. But the total UDT size must be a multiple of 4, so 2 more hidden bytes are added on the end.\<br />
+Some API UDTs will look like <code>MyUDT</code> is correct, but you'll see it defined in VBx as 2 Longs-- which gets the required 8 bytes, with some special handling for the first member. If you refer back to the original C/C++ header, you'll find, for this situation, something like <code>#include &lt;pshpack1.h&gt;</code> or <code>#pragma pack(push,1)</code> somewhere before the UDT. This manually alters the packing rule to insert no hidden bytes anywhere.\<br />
+In twinBASIC, instead of two Longs and having to worry about getting the first one right when it's not an Integer, you can use the original definition with:</p>
+
+<pre class="language-vba"><code class="language-vba">[PackingAlignment(1)]
+Private Type MyUDT
+    x As Integer
+    y As Long
+    z As Integer
+End Type
+Private t As MyUDT
+</code></pre>
+<p>You'll now find that both <code>Len(t)</code> and <code>LenB(t)</code> are 8. <strong>NOTE:</strong> Alignment, not packing alignment, is not set this way-- specifying 16 would not get you a 16-byte structure for <code>t</code>. twinBASIC does not currently have an equivalent for <code>__declspec_align(n)</code>, but such a feature is planned. This is very, very rare outside kernel mode programming.</p>
+<h2 id="Block-and-inline-comments">Block and inline comments</h2>
+<p>You can now use <code>/* */</code> syntax. For example, <code>Sub Foo(bar As Long /* out */)</code> or:</p>
+
+<pre class="language-c"><code class="language-c">/*
+Everything here is
+a comment until:
+*/
+</code></pre>
+<h2 id="Destructuring-assignment-support-for-arrays">Destructuring assignment support for arrays</h2>
+<p>This feature allows you to assign the contents of an array to multiple variables in a single line:</p>
+
+<pre class="language-vba"><code class="language-vba">    Dim a As Long, b As Long, c As Long
+    Dim d(2) As Long
+    d(0) = 1
+    d(1) = 2
+    d(2) = 3
+    Array(a, b, c) = d
+    Debug.Print a, b, c
+</code></pre>
+<p>This would print <code>1 2 3</code>. You could also assign multiple variables at once like this and get the same result:</p>
+
+<pre class="language-vba"><code class="language-vba">    Dim a As Long, b As Long, c As Long
+    Array(a, b, c) = Array(1, 2, 3)
+    Debug.Print a, b, c
+</code></pre>
+<h2 id="Direct-access-to-COM-error-handling">Direct access to COM error handling</h2>
+<p>You can retrieve the last <code>HRESULT</code> to a COM interface call via <code>Err.LastHResult</code>; these are usually hidden and mapped to internal errors-- everything in a COM interface normally called a <code>Sub</code> is actually an <code>HRESULT</code>-returning function.</p>
+<p>More importantly, you can now <strong>set</strong> the <code>HRESULT</code> in interface implementations with <code>Err.ReturnHResult</code>. This was a critical missing feature for which sometimes Err.Raise would work, but mostly programmers resorted to complicated vtable-swapping code to redirect to a standard module function. For instance you can now return <code>S_FALSE</code> where expected with <code>Err.ReturnHResult = S_FALSE</code>.</p>
+<h2 id="Module-level-definitions-not-limited-to-top">Module-level definitions not limited to top</h2>
+<p>It's now possible to insert module-level code in between methods or properties. Where previously all <code>Declare</code> statements, <code>Enum</code>, <code>Type</code>, etc had to appear prior to the first <code>Sub/Function/Property</code>, the following would now be valid:</p>
+
+<pre class="language-vba"><code class="language-vba">Private Const foo = &quot;foo&quot;
+Sub SomeMethod()
+'...
+End Sub
+Private Const bar = &quot;bar&quot;
+Sub SomeOtherMethod()
+'...
+End Sub
+</code></pre>
+<h2 id="Preset-methods-for-code-part-names">Preset methods for code part names</h2>
+<p>The following can be used and what they represent will be automatically inserted as a <code>String</code>:</p>
+<ul>
+<li><code>CurrentComponentName</code>, e.g. &quot;Form1&quot;</li>
+<li><code>CurrentProcedureName</code>, e.g. &quot;Foo&quot; when in <code>Sub Foo()</code></li>
+<li><code>CurrentProjectName</code>,</li>
+<li><code>CurrentSourceFile</code></li>
+<li><code>CurrentComponentCLSID</code></li>
+</ul>
+<h2 id="Removal-of-limits-on-line-continuations%2C-procedure-size%2C-etc.">Removal of limits on line continuations, procedure size, etc.</h2>
+<p>twinBASIC imposes no artificial limitations on those, number of controls on a form, module size, and more.</p>
+<h2 id="Parameterized-class-constructors.">Parameterized class constructors.</h2>
+<p>Classes now support a <code>New</code> sub with ability to add arguments, called as the class is constructed prior to the <code>Class_Initialize</code> event. For example a class can have:</p>
+
+<pre class="language-vba"><code class="language-vba">[ComCreatable(False)]
+Class MyClass
+Private MyClassVar As Long
+Sub New(Value As Long)
+MyClassVar = Value
+End Sub
+End Class
+</code></pre>
+<p>then created by <code>Dim mc As MyClass = New MyClass(123)</code> which sets <code>MyClassVar</code> on create. Note: Classes using this must be private, have the <code>[ComCreatable(False)]</code> attribute, or also contain <code>Class_Initialize()</code>. <code>Class_Initialize()</code> will replace <code>New</code> in callers of a compiled OCX. Within the project, only <code>New</code> will be used if present.</p>
+<h2 id="%3Ccode%3EPrivate%3C/code%3E/%3Ccode%3EPublic%3C/code%3E-modifiers-for-modules-and-classes"><code>Private</code>/<code>Public</code> modifiers for modules and classes</h2>
+<p>A private module or class won't have it's members entered into the type library in an ActiveX project.</p>
+<h2 id="%3Ccode%3EReadOnly%3C/code%3E-variables"><code>ReadOnly</code> variables</h2>
+<p>In a class, module-level variables can be declared as <code>ReadOnly</code>, e.g. <code>Private ReadOnly mStartDate As Date</code>. This allows more complex constant assignments: you can use a function return to set it inline, <code>Private ReadOnly mStartDate As Date = Now()</code>, or <code>ReadOnly</code> constants can be set in <code>Class_Initialize</code> or <code>Sub New(...)</code> (see parameterized class constructors above), but everywhere else, they can only be read, not changed.</p>
+<h2 id="Exported-Functions-and-Variables">Exported Functions and Variables</h2>
+<p>It's possible to export a function or variable from standard modules, including with CDecl, e.g.</p>
+
+<pre class="language-vba"><code class="language-vba">[DllExport]
+Public Const MyExportedSymbol As Long = &amp;H00000001
+
+[DllExport]
+Public Function MyExportedFunction(ByVal arg As Long) As Long
+
+[DllExport]
+Public Function MyCDeclExport CDecl(ByVal arg As Long)
+</code></pre>
+<p>This is primary used to create Standard DLLs (see next section), but this functionality is also available in Standard EXE and other compiled project types.</p>
+<h1 id="Project-Configuration">Project Configuration</h1>
+<h2 id="Built-in-support-for-making-Standard-DLLs">Built in support for making Standard DLLs</h2>
+<p>While it was possible to accomplish this via hacks previously, tB offers it as a built in project type. You can choose this project type at startup, then you simply need to mark functions with <code>[ DllExport ]</code> when you want them exported. The name will be used as-is, it will not be mangled. The <code>CDecl</code> calling convention is supported with the normal syntax, e.g. <code>Public Function foo CDecl(bar As Long) As Long</code>.</p>
+<h2 id="Built-in-support-for-making-Console-Applications">Built in support for making Console Applications</h2>
+<p>This project type allows making a true console project rather than a GUI project.  Helpfully, it will also add a default <code>Console</code> class for reading/writing console IO and provided debug console.</p>
+<h2 id="Built-in-support-for-making-Kernel-Mode-Drivers.">Built in support for making Kernel-Mode Drivers.</h2>
+<p><em>(Expert use only)</em> Kernel mode drivers can only access a very limited subset of the API, and can't call usermode DLLs like a runtime. So it would typically require elaborate hacks and dramatically limit what you could do in prior BASIC products, if possible at all. And of course, there's no WOW64 layer for kernel mode, so tB is the first BASIC product to support making drivers for 64bit Windows. This is controlled by the 'Project: Native subsystem' option, as well as the following two features.</p>
+<h2 id="Built-in-support-for-overriding-entry-point.">Built in support for overriding entry point.</h2>
+<p><em>(Expert use only)</em> BASIC applications typically have a hidden entry point that is the first to run, before <code>Sub Main</code> or the startup form's <code>Form_Load</code>. This sets up features of the app like initializing COM. twinBASIC supports overriding this and setting one of your own procedures as the true entry point. This is mostly useful for kernel mode projects, which must have a specific kind of entry point and can't call the normal APIs in the default. But there are other reasons you might want to use this option, but be warned: Many things will break in a normal application if you don't do the initialization procedures yourself or understand precisely what you can't use.</p>
+<h2 id="Place-API-declares-in-the-IAT">Place API declares in the IAT</h2>
+<p>tB has the option to put all API declares in the import table rather than call them at runtime via <code>LoadLibrary/GetProcAddress</code> like VBx (which puts TLB-declared APIs in the import table; tB replicates this too but further provides an option for in-project declares).</p>
+<p>This has a small performance advantage in that it's loaded  and bound at startup rather than on the first call, but the primary use is for kernel mode, which cannot call <code>LoadLibrary</code> and other user mode APIs to use late binding.</p>
+<h2 id="Built-in-support-to-mark-projects-DEP-aware-and-%3Ccode%3ELARGEADDRESSAWARE%3C/code%3E.">Built in support to mark projects DEP-aware and <code>LARGEADDRESSAWARE</code>.</h2>
+<h2 id="Register-ActiveX-builds-to-%3Ccode%3EHKEY_LOCAL_MACHINE%3C/code%3E-or-%3Ccode%3EHKEY_CURRENT_USER%3C/code%3E-option.">Register ActiveX builds to <code>HKEY_LOCAL_MACHINE</code> or <code>HKEY_CURRENT_USER</code> option.</h2>
+<p>While modern applications use <code>HKEY_CURRENT_USER</code>, for VBx compatibility components must be registered to <code>HKEY_LOCAL_MACHINE</code>. Note that this requires running as admin when registering.</p>
+<h2 id="Registration-at-build-time-is-optional">Registration at build time is optional</h2>
+<p>tB provides the Project: Register DLL after build option so you can disable automatic registration, if for example you wanted to move the file first.</p>
+<h1 id="Misc-Attributes">Misc Attributes</h1>
+<p>The following attributes are also available but haven't been described above:</p>
+<ul>
+<li><code>[Description(&quot;text&quot;)]</code> attribute for APIs, UDTs , and Consts that are shown in popups when you hover over uses of them and in VBx object browser. Additionally, this attribute can be used for <code>Module</code> or <code>Class</code> to describe the module/class itself, and if a class represents a creatable control, it will often be used in component lists to describe the control, as it's exported as the <code>helpstring</code> attribute at the class level too.</li>
+<li><code>[RunAfterBuild]</code> attribute-- you can specify a function that runs after your exe is built (there's <code>App.LastBuildPath</code> to know where it is if you're e.g. signing the exe).</li>
+<li>Per-class/module and Per-procedure <code>[IntegerOverflowChecks(False)]</code>, <code>[FloatingPointErrorChecks(False)]</code> and <code>[ArrayBoundsChecks(False)]</code> attributes to disable those checks on performance-critical routines while leaving them generally in place.</li>
+<li>Constant function folding. You can specify a <code>[ConstantFoldable]</code> attribute for functions where when called with non-variable input, will be computed at compile time, rather than runtime. For example, a function to converted string literals to ANSI. The result would never change, so the resulting ANSI string is stored, rather than recomputing every run.</li>
+<li><code>[Unimplemented]</code> attribute for methods allows showing a compiler warning about it being unimplemented wherever it's called. You can upgrade it to error too.</li>
+<li><code>[SetDllDirectory(True/False)]</code> attribute to allow an explicitly loaded DLL to load it's own dependencies from it's load path. Also has the effect of allowing searching the app path for the DLLs in the base app's declare statements. It can be used per-declare or within a module.</li>
+<li><code>[EnumId(&quot;GUID&quot;)]</code> specifies a GUID to be associated with an enum in type libraries.</li>
+<li><code>[TypeHint()]</code> attribute allows populating Intellisense with an enum for types other than <code>Long</code>.</li>
+<li><code>[CompileIf(condition)]</code> method attribute for more advanced control over conditional compilation.</li>
+<li><code>[DebugOnly]</code> for a Sub/Function will exclude calls to it from the build.</li>
+<li><code>[DllStackCheck(False)]</code> attribute for DLL Declares giving minor codegen size reduction on 32-bit API calls.</li>
+</ul>
+<p>Note that you can also use VBx attributes with the new syntax; <code>[ PredeclaredId ]</code>, <code>[ Hidden ]</code>, etc.</p>
+<h1 id="Standard-Library-Enhancements">Standard Library Enhancements</h1>
+<h2 id="Unicode-support">Unicode support</h2>
+<p>Native functions that take string arguments, such as <code>MsgBox</code> and FileSystem functions (e.g. <code>Open</code>, <code>Dir</code>, <code>Mkdir</code>, <code>Kill</code>, and <code>RmDir</code>) now support Unicode. Additionally, .twin files make this easy to use as the editor supports Unicode as well. So you can paste a Unicode string in the editor, see it appear correctly, then have the same string correctly displayed by tB functions and controls.</p>
+<h3 id="Encoding-options-for-file-i/o">Encoding options for file i/o</h3>
+<p>The <code>Open</code> statement supports Unicode through the use of a new <code>Encoding</code> keyword and variable, and in addition allows you to specify a wide range of encoding options in addition to standard Unicode options.</p>
+<p>Usage example:</p>
+
+<pre class="language-vba"><code class="language-vba">Open &quot;C:\MyFile.txt&quot; For Input Encoding utf-8 As #1
+</code></pre>
+<p>The full list of encoding options currently defined (and don't worry, these will come up in Intellisense) is: <code>default_system_ansi</code>, <code>utf_7</code>, <code>utf_7_bom</code>, <code>utf_8</code>, <code>utf_8_bom</code>, <code>utf_16</code>, <code>utf_16_bom</code>, <code>us_ascii</code>, <code>koi8_u</code>, <code>koi8_r</code>, <code>big5</code>, <code>iso_8859_1_latin1</code>, <code>iso_8859_2_latin2</code>, <code>iso_8859_3_latin3</code>, <code>iso_8859_4_latin4</code>, <code>iso_8859_5_cyrillic</code>, <code>iso_8859_6_arabic</code>, <code>iso_8859_7_greek</code>, <code>iso_8859_8_hebrew</code>, <code>iso_8859_9_latin5_turkish</code>, <code>iso_8859_10_latin6_nordic</code>, <code>iso_8859_11_thai</code>, <code>iso_8859_13_latin8_baltic</code>, <code>iso_8859_14_latin8_celtic</code>, <code>iso_8859_15_latin9_euro</code>, <code>iso_8859_16_latin10_balkan</code>, <code>windows_1250_central_europe</code>, <code>windows_1251_cyrillic</code>, <code>windows_1252_western</code>, <code>windows_1253_greek</code>, <code>windows_1254_turkish</code>, <code>windows_1255_hebrew</code>, <code>windows_1256_arabic</code>, <code>windows_1257_baltic</code>, <code>windows_1258_vietnamese</code>, <code>ibm_850_western_europe</code>, <code>ibm_852_central_and_eastern_europe</code>, <code>ibm_855_cyrillic</code>, <code>ibm_856_hebrew</code>, <code>ibm_857_turkish</code>, <code>ibm_858_western_europe</code>, <code>ibm_860_portuguese</code>, <code>ibm_861_icelandic</code>, <code>ibm_862_hebrew</code>, <code>ibm_863_canadian</code>, <code>ibm_865_danish</code>, <code>ibm_866_cyrillic</code>, <code>ibm_869_greek</code>, <code>ibm_932_japanese</code>, and <code>ibm_949_korean</code>.</p>
+<h2 id="New-Built-in-functions%3A">New Built-in functions:</h2>
+<p>In addition to the new datatype-related and component name functions already described, the standard builtin <code>VBA</code> library functions include:</p>
+<ul>
+<li><code>IsArrayInitialized(variable)</code> - Determines if an array is initialized. Note: A <code>Variant</code> declared as empty array with <code>Array()</code> will return <code>True</code>.</li>
+<li><code>RGBA(r, g, b, a)</code> - Like the <code>RBG()</code> function, only including the alpha channel.</li>
+<li><code>RBG_R(rgba)</code>, <code>RGB_B(rgba)</code>, <code>RBG_G(rgba)</code>, and <code>RGBA_A(rgba)</code> - Get the values for individual channels.</li>
+<li><code>TranslateColor(ColorValue, Optional Palette)</code> - Translates an OLE color value to an RGB color.</li>
+<li><code>ProcessorArchitecture()</code> - Returns either <code>vbArchWin32</code> or <code>vbArchWin64</code>, depending on application bitness.</li>
+<li><code>CallByDispId(Object, DispId, CallType, Arguments)</code> - Similar to <code>CallByName()</code>, but uses the dispatch id instead of method name.</li>
+<li><code>RaiseEventByName(Object, Name, Args)</code> - Invokes an event on class, using arguments specified as a single <code>Variant</code> containing an array.</li>
+<li><code>RaiseEventByName2(Object, Name, Arg1, Arg2, ...)</code> - Invokes an event on class, using arguments specified as a ParamArray.</li>
+<li><code>PictureToByteArray(StdPicture)</code> - Converts a picture to a byte array; Globals.LoadPicture supports loading from byte arrays.</li>
+<li><code>CreateGUID()</code> - Returns a string with a freshly generated GUID.</li>
+<li><code>AllocMem(size)</code> and <code>FreeMem</code> - allocate and free memory from the process heap.</li>
+<li><code>Int3Breakpoint</code> - Inserts a true breakpoint helpful for attached external debuggers.</li>
+</ul>
+<h3 id="Built-in-runtime-functions-and-redirects-from-msvbvm60.dll">Built in runtime functions and redirects from msvbvm60.dll</h3>
+<p>tB has built in support for some of the most commonly used runtime functions, for compatibility. These all support both 32 and 64bit. Unless otherwise noted, all of these function in two ways: First, built in native versions that are always present (unless you remove the basic compiler packages), with the most common arrangements of arguments. These don't require a <code>Declare</code> statement. If you <em>do</em> provide a <code>Declare</code> version, tB will allow whatever arrangements of arguments you specify (e.g. <code>As Any</code> instead of <code>As LongPtr</code>), mapped to an alias if provided.</p>
+<ul>
+<li>Memory functions: <code>GetMem1</code>, <code>GetMem2</code>, <code>GetMem4</code>, <code>GetMem8</code>, <code>PutMem1</code>, <code>PutMem2</code>, <code>PutMem4</code>, <code>PutMem8</code> with new additions <code>GetMemPtr</code> and <code>PutMemPtr</code> pegged to the current pointer size.</li>
+<li><code>vbaObjSet</code>, <code>vbaObjSetAddref</code>, and <code>vbaObjAddref</code> for manipulating object assignments through pointers.</li>
+<li><code>vbaCopyBytes</code> and <code>vbaCopyBytesZero</code></li>
+<li><code>__vbaAryMove</code> and <code>__vbaRefVarAry</code> (currently only with a <code>Declare</code> statement).</li>
+<li>tB also has an instrinsic <code>VarPtr</code> but will still redirect calls via a declare statement, e.g. aliases used for arrays.</li>
+</ul>
+<h1 id="GUI-components">GUI components</h1>
+<h2 id="Support-for-modern-image-formats">Support for modern image formats</h2>
+<p>You no longer face an incredibly limited format selection for images in tB Forms and Controls; not only do the Bitmap and Icon formats support the full range of formats for those, you can additionally load PNG Images, JPEG Images, Metafiles (.emf/.wmf), and SVG Vector Graphics (.svg).</p>
+<h3 id="Improved-%3Ccode%3ELoadPicture%3C/code%3E">Improved <code>LoadPicture</code></h3>
+<p>Additionally, <code>LoadPicture</code> can load all image types directly from a byte array, rather than requiring a file on disk. You can use this to load images from resource files or other sources. Note that if your projects references stdole2.tlb (most do), currently you must qualify it as <code>Global.LoadPicture</code> to get tB's custom binding that supports byte arrays.</p>
+<h2 id="Transparency-and-Alpha-Blending-on-Forms">Transparency and Alpha Blending on Forms</h2>
+<h2 id="Form.TransparencyKey">Form.TransparencyKey</h2>
+<p>This new property specifies a color that will be transparent to the window below it in the z-order (all windows, not just in your project). Setting this property will cause the specified color to be 100% transparent. A Shape control with a solid <code>FillStyle</code> is a helpful tool to color the areas of the form in the key color.</p>
+<h2 id="Form.Opacity">Form.Opacity</h2>
+<p>This sets an alpha blending level for the entire form. Like transparency, this is to all windows immediately underneath it. Note that any areas covered by the <code>TransparencyKey</code> color will remain 100% transparent.</p>
+<p>The following image shows a Form with a <code>TransparencyKey</code> of Red, using a Shape control to define the transparent area, while also specifying 75% <code>Opacity</code> for the entire form:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/85f25aa2-abc8-4d42-8510-078f8ee4a324" alt="image alt &gt;&lt;" /></p>
+<h2 id="Additional-Form-features">Additional Form features</h2>
+<p>In addition to the above, forms have:</p>
+<ul>
+<li><code>DpiScaleX</code>/<code>DpiScaleY</code> properties to retrieve the current values</li>
+<li><code>.MinWidth</code>, <code>.MinHeight</code>, <code>.MaxWidth</code>, and <code>.MaxHeight</code> properties so subclassing isn't needed for this</li>
+<li><code>Form.TopMost</code> property.</li>
+<li>Control anchoring: control x/y/cx/cy can made relative, so they're automatically moved/resized with the Form. For example if you put a TextBox in the bottom right, then check the Right and Bottom anchors (in addition to Top and Left), the bottom right will size with the form on resize. This saves a lot of boiler-plate sizing code.</li>
+<li>Control docking: Controls can be fixed along one of the sides of the Form (or container), or made to fill the whole Form/container. Multiple controls can be combined and mixed/matched in docking positions.</li>
+</ul>
+<p>For more information on Control Anchoring and Control Docking, see the Wiki entry <a href="https://github.com/twinbasic/documentation/wiki/Control-Anchoring-and-Docking-%E2%80%90-Automatic-size-and-position-management"  target="_blank">Control Anchoring and Docking ‐ Automatic size and position management</a>.</p>
+<h2 id="Unicode-support">Unicode support</h2>
+<p>All tB-implemented controls support Unicode, both in the code editor and when displayed.</p>
+<p><strong>Important:</strong> If you subclass controls, note that this means you will receive the Unicode (W) version of window messages, e.g. ListViews will send <code>LVN_GETDISPINFOW (LVN_FIRST - 77)</code> instead of <code>LVN_GETDISPINFOA (LVN_FIRST - 50)</code>.</p>
+<h2 id="Control-Modernization">Control Modernization</h2>
+<p>tB will eventually replace all built in controls that you're used to, for now the ones available are: CommandButton, TextBox, ComboBox, CheckBox, OptionButton, Label, Frame, PictureBox, Line, Shape, VScrollBar, HScrollBar, Timer, DriveListBox, DirListBox, FileListBox, Image, and Data from the basic set; then, ListView, TreeView, ProgressBar, DTPicker, MonthView, Slider, and UpDown from the Common Controls.</p>
+<ul>
+<li>Controls support x64: Every control can be compiled both as 32bit and 64bit without changing anything.\</li>
+<li>Controls are DPI aware: They will automatically size correctly when dpi awareness is enabled for your app.\</li>
+<li>Controls support Visual Styles per-control: Comctl6 styles can be applied, or not, on a control-by-control basis with the <code>.VisualStyles</code> property.</li>
+</ul>
+<h3 id="Alternatives-for-unimplemented-controls">Alternatives for unimplemented controls</h3>
+<p>The best option is Krool's VBCCR and VBFlexGrid projects. These are now available <a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-Importing-a-package-from-TWINSERV"  target="_blank">from the Package Server</a> in x64-compatible form, and are also DPI aware and support Visual Styles.</p>
+<p>Additionally, the original OCX controls provided by Microsoft will work fine; however, they're mostly 32-bit only. The x64 version of <code>MSComCtl.ocx</code> doesn't come with Windows and isn't legally redistributable but if you have Office 64bit, it works in tB.</p>
+<h2 id="Misc-additional-control-properties">Misc additional control properties</h2>
+<ul>
+<li><p><code>TextBox.NumbersOnly</code> property: Restricts input to 0-9 by setting the <code>ES_NUMBER</code> style on the underlying control.</p>
+</li>
+<li><p><code>TextBox.TextHint</code> property: Sets the light gray hint text in an empty TextBox (<code>EM_SETCUEBANNER</code>).</p>
+</li>
+<li><p><code>PictureDpiScaling</code> property for forms, usercontrols and pictureboxes: PictureDpiScaling property allows you to turn off DPI scaling of images so that they display at 1:1 rather than allowing the OS to stretch them.  The idea being you may want to choose a different bitmap manually, rather than apply the somewhat limited OS-stretching.</p>
+</li>
+<li><p><code>Label.VerticalAlignment</code> property: Defaults to Top.</p>
+</li>
+<li><p><code>Label.LineSpacing</code> property (in twips, default is 0)</p>
+</li>
+</ul>
+<h1 id="Design-Experience-and-Compiler-Features">Design Experience and Compiler Features</h1>
+<h2 id="Customize-COM-initialization">Customize COM initialization</h2>
+<p>You can specify the call used by the hidden entry point with the following options: <code>CoInitialize STA</code>, <code>CoInitializeEx MTA</code>, <code>OleInitialize STA</code>. If you don't know the difference, don't change it from the default.</p>
+<h2 id="Customize-symbol-table-parameters">Customize symbol table parameters</h2>
+<p>You can adjust the following parameters: Max Size Raw, Max Size Lookup, and Data Type Lookup. These options allow for compiling very large projects that would otherwise have issues, and the compiler will notify you if these values need to be increased.</p>
+<h2 id="Sanitize-Boolean-types">Sanitize Boolean types</h2>
+<p>Under the hood, a Boolean is a 2-byte type. With memory APIs, or when receiving these from outside code, it's possible to store values other than the ones representing <code>True</code> and <code>False</code>. This option validates Booleans from external sources, e.g. COM objects and APIs, to ensure only the two supported values are stored.</p>
+<h2 id="Stale/dangling-pointer-detection">Stale/dangling pointer detection</h2>
+<p>Bugs result from using Strings and Variants after they have been freed. It may not be noticed immediately if the memory has not been overwritten, but it's sometimes hard to detect and can cause issues like a String displaying it's previous value or garbage. This debugging option detects use-after-free, and replaces the data with a special symbol indicating the problem. Below shows an example where the ListView ColumnHeader text had been set by previously-freed string and detected by this feature:</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/021f6cbf-acce-445d-ade7-3fcad0af4927" alt="image" /></p>
+<p>Previously, it had shown the same text for every column-- but only under certain circumstances, leading to the issue being overlooking for a long time.</p>
+<h2 id="Compiler-Warnings">Compiler Warnings</h2>
+<p>twinBASIC provides compiler warnings during design time for common bad practices or likely oversights, including:</p>
+<ul>
+<li>Warnings for likely-incorrect hex literals\</li>
+</ul>
+<p>Non-explicit values are coerced into the lowest possible type first. So if you declare a constant as <code>&amp;H8000</code>, the compiler sees it as an -32,768 <code>Integer</code>, and when you're putting that into a <code>Long</code> you almost certainly do not want -32,768, you want <strong>positive</strong> 32,768, which requires you to instead use <code>&amp;H8000&amp;</code>.\<br />
+This warning is supplied for <code>&amp;H8000</code>-<code>&amp;HFFFF</code> and <code>&amp;H80000000</code>-<code>&amp;HFFFFFFFF</code>.</p>
+<ul>
+<li>Warnings for implicit variable creation with <code>ReDim</code>.\</li>
+</ul>
+<p>When you use <code>ReDim myArray(1)</code>, the <code>myArray</code> variable is created for you, when it's good practice to declare all variables first.</p>
+<ul>
+<li>Warnings for use of <code>DefType</code>\</li>
+</ul>
+<p>This feature is discouraged for it making code difficult to read and prone to difficult to debug errors.</p>
+<p>The full list can be found in your project's Settings page:\<br />
+<img src="https://github.com/twinbasic/documentation/assets/7834493/017bd6f8-4b35-43a9-b6be-84cba69daf64" alt="image" /></p>
+<h3 id="Adjusting-warnings">Adjusting warnings</h3>
+<p>Each warning has the ability to set them to ignore or turn them into an error both project-wide via the Settings page, and per-module/class, and per-procedure with <code>[IgnoreWarnings(TB___)]</code>, <code>[EnforceWarnings(TB____)]</code>, and <code>[EnforceErrors(TB____)]</code> attributes, where the underscores are replaced with the <strong>full</strong> number, e.g. <code>[IgnoreWarnings(TB0001)]</code>; the leading zeroes must be included.</p>
+<h3 id="Strict-mode">Strict mode</h3>
+<p>twinBASIC has added the following warning messages to support something similar to .NET's Strict Mode, where certain implicit conversions are not allowed and must be made explicit. By default, these are all set to be ignored, and must be enabled in the &quot;Compiler Warnings&quot; section of Project Settings or per-module/procedure with <code>[EnforceWarnings()]</code>. All of these can be configured individually and ignored for procedure/module scope with <code>[IgnoreWarnings()]</code></p>
+<p><strong>TB0018: Impicit narrowing conversion</strong>\<br />
+Such as converting a Long to Integer; if you have <code>Dim i As Integer, l As Long</code> then <code>i = l</code> will trigger the warning, and <code>i = CInt(l)</code> would be required to avoid it.</p>
+<p><strong>TB0019: Implicit enumeration conversion</strong>\<br />
+When assigning a member of one Enum to a variabled typed as another, such as <code>Dim day As VbDayOfWeek: day = vbBlack</code>. The <code>CType(Of &lt;type&gt;)</code> operator whose use in pointers was described in the previous section is also used to specify an explicit type conversion in this case; the warning would not be triggered by <code>day = CType(Of VbDayOfWeek)(vbBlack)</code>.</p>
+<p><strong>TB0020: Suspicious interface conversion</strong>\<br />
+If a declared coclass doesn't explicitly name an interface as supported, converting to it will trigger this warning, e.g.</p>
+
+<pre class="language-vba"><code class="language-vba">Dim myPic As StdPicture
+Dim myFont As StdFont
+Set myFont = myPic
+</code></pre>
+<p>You'd use <code>Set myFont = CType(OfStdFont)(myPic)</code> to avoid this warning.</p>
+<p><strong>TB0021: Implicit enumeration conversion to/from numeric</strong><br />
+Triggered by assigning a numeric literal to a variabled typed as an Enum, such as <code>Dim day As VbDayOfWeek: day = 1</code>. To avoid it you'd use <code>day = CType(Of VbDayOfWeek)(1)</code>.</p>
+<h2 id="Run-some-Subs-from-the-IDE">Run some Subs from the IDE</h2>
+<p>The CodeLens feature allows running Subs and Functions, with no arguments and in modules (but not classes/Forms/UserControls) right from the editor without starting the full program. It has robust access to your code; it can access constants, call other functions both instrinsic and user-define, call APIs, and print to the Debug Console.\<br />
+Methods eligible to run with CodeLens (when enabled), have a bar above them that you can click to run:\<br />
+<img src="https://github.com/twinbasic/documentation/assets/7834493/351d0147-cad3-4e16-89e5-0a9e43496740" alt="image" /></p>
+<h2 id="Modern-IDE-features">Modern IDE features</h2>
+<p>While the twinBASIC IDE still has a lot of work planned, it already includes a number of features that make life much easier found in other modern IDE, but not the ancient VBx IDEs, including:</p>
+<ul>
+<li><p>Code folding, with foldable custom-defined regions via <code>#Region &quot;name&quot; ... #End Region</code> blocks.</p>
+</li>
+<li><p>Fully customizable keyboard shortcuts covering all commands, with ability to save and switch between different sets.</p>
+</li>
+<li><p>Sticky-scroll, which keeps context lines at the top showing major sections of code like module, region, method, <code>With</code> blocks, etc.</p>
+</li>
+<li><p>Indent guides, lines drawn along common indent points to help line things up right.</p>
+</li>
+<li><p>Auto-indent on paste.</p>
+</li>
+<li><p>Paste as comment.</p>
+</li>
+<li><p>Full Unicode support in .twin files, so you can use the full Unicode range of the font in your comments and strings.</p>
+</li>
+<li><p>Inline code hints, which provide annotations at the end of blocks for what the block is (see picture).</p>
+</li>
+<li><p>Code mini-map, shows a graphics overview of the code structure alongside the scroll bar, helping to guide your scrolling.</p>
+</li>
+<li><p>Advanced Information popup, which shows offsets for UDT members, their total size via both <code>Len()</code> plus <code>LenB()</code>, and their alignment; and v-table entry offsets for interfaces and classes, as well as their inheritance chain.</p>
+</li>
+<li><p>A type library viewer for controls and TLB files that displays the full contents in twinBASIC-style syntax rather than ODL.</p>
+</li>
+<li><p>Color-matching for parentheses and brackets.</p>
+</li>
+<li><p>A History panel containing a list of recently modified methods.</p>
+</li>
+<li><p>An Outline panel with selectable categories.</p>
+</li>
+<li><p>Problems panel, provides a list of all current errors and warnings (you can filter to show only one or the other).</p>
+</li>
+<li><p>On the Form Designer, control with <code>Visible = False</code> are faded to visually indicate this. Also, pressing and holding Control shows the tab index of each tab stop.</p>
+</li>
+</ul>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/014a1d28-30af-4a4d-8b9b-83ab6084f00a" alt="image" />\<br />
+<a href="https://www.twinbasic.com/images/fafaloneIDEscreenshot1.png"  target="_blank">Full size</a></p>
+<ul>
+<li>New code structure based Project Explorer:\</li>
+</ul>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/9a5c50d5-a9f8-44a7-96f7-ae84548bd7ef" alt="image" /></p>
+<p>The classic file-based view is still used by default, you can activate the new view with a toggle button:\<br />
+<img src="https://github.com/twinbasic/documentation/assets/7834493/b000d3aa-3689-4d94-88e3-bca44f8b7de6" alt="image" /></p>
+<h2 id="Package-Server">Package Server</h2>
+<p>Code can be grouped as a package, and published to an online server. You can have Private packages, visible only to you, or Public packages, visible to everyone.</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/fcc084dc-cfa5-4d42-9a78-167db24a686f" alt="image" /></p>
+<p>For more information, see the following Wiki entries:</p>
+<p><a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-What-is-a-package"  target="_blank">twinBASIC Packages What is a package</a></p>
+<p><a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-Creating-a-TWINPACK-package"  target="_blank">twinBASIC Packages Creating a TWINPACK package</a></p>
+<p><a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-Importing-a-package-from-a-TWINPACK-file"  target="_blank">twinBASIC Packages Importing a package from a TWINPACK file</a></p>
+<p><a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-Importing-a-package-from-TWINSERV"  target="_blank">twinBASIC Packages Importing a package from TWINSERV</a></p>
+<p><a href="https://github.com/twinbasic/documentation/wiki/twinBASIC-Packages-Updating-a-package"  target="_blank">twinBASIC Packages Updating a package</a></p>
+<h2 id="View-Forms-and-Packages-as-JSON">View Forms and Packages as JSON</h2>
+<p>Project forms and packages are stored as JSON format data, and you can view this by right-click in Project Explorer and selecting 'View as JSON'. This is particularly interesting for packages as it exposes the entire code in a much more easily parsed format.</p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/22660f54-ff5d-4b21-93d3-39715f1f35ed" alt="image" /></p>
+<p><img src="https://github.com/twinbasic/documentation/assets/7834493/a6525b1d-ac22-4303-ae27-7984c20eba0c" alt="image" /></p>
+<hr />
+<h1 id="Many-more-to-come%21">Many more to come!</h1>
+<p>This list has covered all new features at the present time. There's many more planned, including built-in multithreading syntax, unsigned variable types, native support for aliases (currently supported in type libraries only), full inheritance, and more! If there's a feature you'd like to see, please feel welcome to make a feature request by <a href="https://github.com/twinbasic/twinbasic/issues"  target="_blank">posting an issue in the main twinBASIC GitHub repository</a>.</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Defining a CustomControl - 开发手册 | twinbasic.com.cn</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>开发手册</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/twinbasic/">twinbasic</a></li>
+<li class=""><a  href="/tbman/">tbman</a></li>
+<li class="active"><a  href="/official/">官方文档</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://twinbasic.com.cn">首页</a></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+<li class="not_active no_link sidebar_category"><span class="label">简介</span></li>
+<li class="not_active with_link"><a href="/official/index.html"><span class="label">欢迎使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/Install.html&from=/official/start/Install.html"><span class="label">安装指引</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/KnownIssues.html&from=/official/start/KnownIssues.html"><span class="label">已知问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=start/ChangeLog.html&from=/official/start/ChangeLog.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">开发</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/hello.html&from=/official/dev/hello.html"><span class="label">快速入门</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=dev/more.html&from=/official/dev/more.html"><span class="label">更多...</span><span class=""></span></a></li>
+<li class="not_active no_link sidebar_category"><span class="label">关于</span></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Collaboration.html&from=/official/about/Collaboration.html"><span class="label">协作</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/OfThanks.html&from=/official/about/OfThanks.html"><span class="label">致谢</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/official/no_translate.html?ref=about/Donate.html&from=/official/about/Donate.html"><span class="label">捐赠</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Defining a CustomControl</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2024-07-09">
+                                    2024-07-09
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>A CustomControl is simply an ordinary twinBASIC class, with a few extra attributes and requirements.</p>
+<p><em><strong>TIP: It is highly advisable to look at and experiment with the sample project provided with twinBASIC before trying to implement your own CustomControl.</strong></em></p>
+<p><img src="https://www.twinbasic.com/images/wiki/ccSampleProject.png" alt="CustomControl attribute" /></p>
+<hr />
+<h3 id="CustomControl%28%29-attribute">CustomControl() attribute</h3>
+<p><img src="https://www.twinbasic.com/images/wiki/ccCustomControlAttribute.png" alt="CustomControl attribute" /></p>
+<p>This is a required attribute for all CustomControls.  You must provide the relative path to an image file within your project that can be used to identify your control in the form designer toolbox.  We recommend that you put the image file in the Miscellaneous folder in your project.</p>
+<p><img src="https://www.twinbasic.com/images/wiki/ccGridButtonImage.png" alt="CustomControl GridImage Folder" /></p>
+<hr />
+<h3 id="ClassId%28%29-attribute">ClassId() attribute</h3>
+<p><img src="https://www.twinbasic.com/images/wiki/ccClassIdAttribute.png" alt="CustomControl ClassId Attribute" /></p>
+<p>This is a required attribute for all CustomControls.  You must provide a unique CLSID (GUID) in order for the form engine to work with your control.</p>
+<h5 id="TIP%3A--if-you-enter-%3Ccode%3E%5B-ClassId-%28%29-%5D%3C/code%3E-twinBASIC-helps-you-out---just-press-the-%27insert-a-randomly-generated-GUID%27-text%3A">TIP:  if you enter <code>[ ClassId () ]</code> twinBASIC helps you out - just press the 'insert a randomly generated GUID' text:</h5>
+<p><img src="https://www.twinbasic.com/images/wiki/ccClassIdInsert.png" alt="CustomControl ClassId auto-generate" /></p>
+<hr />
+<h3 id="COMCreatable%28%29-attribute">COMCreatable() attribute</h3>
+<p><img src="https://www.twinbasic.com/images/wiki/ccCOMCreatable.png" alt="CustomControl COMCreatable attribute" /></p>
+<p>This is an optional attribute, but it is usually advisable to set this attribute to False, as you don't need to instantiate CustomControls from external COM environments.</p>
+<hr />
+<h3 id="Must-implement-ICustomControl">Must implement ICustomControl</h3>
+<p><img src="https://www.twinbasic.com/images/wiki/ccICustomControl.png" alt="CustomControl ICustomControl interface" /></p>
+<p>All CustomControls <em>must</em> implement CustomControls.ICustomControl.  This interface currently has 3 methods that you must implement:</p>
+
+<pre class="language-none"><code class="language-none">Sub Initialize(ByVal Context As CustomControlContext)
+</code></pre>
+<p>This method is called when your control is attached to a form.  You must store the provided Context object in a class field as it offers a <code>Repaint()</code> method for informing the form engine that something in your control has changed and needs to be repainted.</p>
+
+<pre class="language-none"><code class="language-none">Sub Destroy()
+</code></pre>
+<p>This method is called when your control is detached from a form.  This allows an opportunity to break circular references so that your object instance can be destructed properly.   The implementation for this can often be left empty provided you don't create circular references in objects.</p>
+
+<pre class="language-none"><code class="language-none">Sub Paint(ByVal Canvas As Canvas)
+</code></pre>
+<p>This is the most interesting part for a CustomControl.  As such, it gets its own section, see <a href="https://github.com/WaynePhillipsEA/twinbasic/wiki/twinBASIC---CustomControls---Painting---drawing-to-your-control"  target="_blank">Painting / drawing to your control</a></p>
+<hr />
+<h3 id="Minimum-set-of-properties">Minimum set of properties</h3>
+<p>As twinBASIC doesn't yet support inheritance, you must expose a set of common properties (class fields) for all CustomControls:</p>
+
+<pre class="language-none"><code class="language-none">Public Name As String
+Public Left As CustomControls.PixelCount
+Public Top As CustomControls.PixelCount
+Public Width As CustomControls.PixelCount
+Public Height As CustomControls.PixelCount
+Public Anchors As Anchors = New Anchors
+Public Dock As CustomControls.DockMode
+Public Visible As Boolean
+</code></pre>
+<p>The form designer and the form engine work with these properties, so it is important to include them in your CustomControl class.</p>
+<p>Note that the form designer works with pixel values which are not DPI-scaled.  So the Left/Top/Width/Height properties of your control do not reflect DPI scaling.  For example, if your control has a width of 50 pixels, then at DPI 150%, then the actual drawing width is 75 pixels ( see <a href="https://github.com/WaynePhillipsEA/twinbasic/wiki/twinBASIC---CustomControls---Painting---drawing-to-your-control"  target="_blank">Painting / drawing to your control</a> ).</p>
+<hr />
+<h3 id="Must-have-a-serialization-constructor">Must have a serialization constructor</h3>
+<p>CustomControls <em>must</em> offer a serialization constructor:</p>
+
+<pre class="language-none"><code class="language-none">Public Sub New(Serializer As SerializationInfo)
+</code></pre>
+<p>The passed in Serializer object offers a <code>Deserialize()</code> method that you call in order to load the properties that have been set for your control via the form designer.  See <a href="https://github.com/WaynePhillipsEA/twinbasic/wiki/twinBASIC---CustomControls---Property-Sheet-&amp;-Object-Serialization"  target="_blank">Property Sheet &amp; Object Serialization</a> for further information.</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://vb6.pro">欢迎访问 vb6.pro 资源站点</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script src="http://api.a-vi.com/tongji/vist.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>
