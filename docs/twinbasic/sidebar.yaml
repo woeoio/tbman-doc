@@ -4,9 +4,11 @@ items:
     file: README.md
   - label: IDE
   - label: 窗体属性详解
-    file: ide/Form.md   
+    file: ide/Form.md
   - label: 设置窗体的背景色
-    file: ide/FormBG.md            
+    file: ide/FormBG.md
+  - label: 导入离线的 tb 依赖包
+    file: ide/Package.md
   - label: 杂项
   - label: 资源文件管理
-    file: other/Resources.md    
+    file: other/Resources.md

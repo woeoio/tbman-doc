@@ -13,8 +13,14 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>http://doc.twinbasic.com.cn/twinbasic/ide/Package.html</loc>
+            <lastmod>2025-02-11</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>http://doc.twinbasic.com.cn/twinbasic/other/Resources.html</loc>
-            <lastmod>2025-01-21</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -26,79 +32,79 @@
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/about/Collaboration.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/about/Donate.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/about/OfThanks.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/01_Events.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/02_Methods.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/03_Properties.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/04_Controls.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/05_FeatureControls.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/06_DeveloperTools.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/07_AdvancedSettings.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/08_OtherFeatures.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/hello.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/dev/more.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -116,25 +122,127 @@
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/start/ChangeLog.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/start/Install.html</loc>
-            <lastmod>2024-12-07</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>http://doc.twinbasic.com.cn/tbman/start/KnownIssues.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>http://doc.twinbasic.com.cn/vb6/index.html</loc>
-            <lastmod>2024-12-05</lastmod>
+            <loc>http://doc.twinbasic.com.cn/official/Control-Anchoring-and-Docking-‐-Automatic-size-and-position-management.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/index.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC---CustomControls---Defining-a-CustomControl.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC---CustomControls---Notes-about-the-form-designer.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC---CustomControls---Painting---drawing-to-your-control.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC---CustomControls---Property-Sheet-&-Object-Serialization.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Compiler-Constants.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-CustomControls-Introduction.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Packages-Updating-a-package.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Packages-What-is-a-package.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-WebView2-Customize-The-UserDataFolder.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-WebView2-Getting-Started.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-WebView2-Information-about-re-entrancy.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Features.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Frequently-Asked-Questions-(FAQs).html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Packages-Creating-a-TWINPACK-package.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Packages-Importing-a-package-from-a-TWINPACK-file.html</loc>
+            <lastmod>2025-02-08</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>http://doc.twinbasic.com.cn/official/twinBASIC-Packages-Importing-a-package-from-TWINSERV.html</loc>
+            <lastmod>2025-02-08</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
